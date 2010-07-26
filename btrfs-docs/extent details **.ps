@@ -1,0 +1,1776 @@
+%!PS-Adobe-3.0
+%%Creator: groff version 1.05
+%%DocumentNeededResources: font Times-Bold
+%%+ font Times-Italic
+%%+ font Times-Roman
+%%+ font Courier
+%%+ font Times-BoldItalic
+%%DocumentSuppliedResources: procset grops 1.05 0
+%%Pages: 12
+%%PageOrder: Ascend
+%%Orientation: Portrait
+%%EndComments
+%%BeginProlog
+%%BeginResource: procset grops 1.05 0
+
+/setpacking where {
+	pop
+	currentpacking
+	true setpacking
+} if
+
+/grops 120 dict dup begin 
+
+% The ASCII code of the space character.
+/SC 32 def
+
+/A /show load def
+/B { 0 SC 3 -1 roll widthshow } bind def
+/C { 0 exch ashow } bind def
+/D { 0 exch 0 SC 5 2 roll awidthshow } bind def
+/E { 0 rmoveto show } bind def
+/F { 0 rmoveto 0 SC 3 -1 roll widthshow } bind def
+/G { 0 rmoveto 0 exch ashow } bind def
+/H { 0 rmoveto 0 exch 0 SC 5 2 roll awidthshow } bind def
+/I { 0 exch rmoveto show } bind def
+/J { 0 exch rmoveto 0 SC 3 -1 roll widthshow } bind def
+/K { 0 exch rmoveto 0 exch ashow } bind def
+/L { 0 exch rmoveto 0 exch 0 SC 5 2 roll awidthshow } bind def
+/M { rmoveto show } bind def
+/N { rmoveto 0 SC 3 -1 roll widthshow } bind def
+/O { rmoveto 0 exch ashow } bind def
+/P { rmoveto 0 exch 0 SC 5 2 roll awidthshow } bind def
+/Q { moveto show } bind def 
+/R { moveto 0 SC 3 -1 roll widthshow } bind def
+/S { moveto 0 exch ashow } bind def
+/T { moveto 0 exch 0 SC 5 2 roll awidthshow } bind def
+
+% name size font SF -
+
+/SF {
+	findfont exch
+	[ exch dup 0 exch 0 exch neg 0 0 ] makefont
+	dup setfont
+	[ exch /setfont cvx ] cvx bind def
+} bind def
+
+% name a c d font MF -
+
+/MF {
+	findfont
+	[ 5 2 roll
+	0 3 1 roll % b
+	neg 0 0 ] makefont
+	dup setfont
+	[ exch /setfont cvx ] cvx bind def
+} bind def
+
+/level0 0 def
+/RES 0 def
+/PL 0 def
+/LS 0 def
+
+% BP -
+
+/BP {
+	/level0 save def
+	0 setlinecap
+	1 setlinejoin
+	72 RES div dup scale
+	LS {
+		90 rotate
+	} {
+		0 PL translate
+	} ifelse
+	1 -1 scale
+} bind def
+
+/EP {
+	level0 restore
+	showpage
+} bind def
+
+
+% centerx centery radius startangle endangle DA -
+
+/DA {
+	newpath arcn stroke
+} bind def
+
+% x y SN - x' y'
+% round a position to nearest (pixel + (.25,.25))
+
+/SN {
+	transform 
+	.25 sub exch .25 sub exch
+	round .25 add exch round .25 add exch
+	itransform
+} bind def
+	
+% endx endy startx starty DL -
+% we round the endpoints of the line, so that parallel horizontal
+% and vertical lines will appear even
+
+/DL {
+	SN
+	moveto
+	SN
+	lineto stroke
+} bind def
+
+% centerx centery radius DC -
+
+/DC {
+	newpath 0 360 arc closepath
+} bind def
+
+
+/TM matrix def
+
+%  width height centerx centery DE -
+
+/DE {
+	TM currentmatrix pop
+	translate scale newpath 0 0 .5 0 360 arc closepath
+	TM setmatrix
+} bind def
+
+% these are for splines
+
+/RC /rcurveto load def
+/RL /rlineto load def
+/ST /stroke load def
+/MT /moveto load def
+/CL /closepath load def
+
+% fill the last path
+
+% amount FL -
+
+/FL {
+	currentgray exch setgray fill setgray
+} bind def
+
+% fill with the ``current color''
+
+/BL /fill load def
+
+/LW /setlinewidth load def
+% new_font_name encoding_vector old_font_name RE -
+
+/RE {
+	findfont
+	dup maxlength dict begin
+	{
+		1 index /FID ne { def } { pop pop } ifelse
+	} forall
+	/Encoding exch def
+	dup /FontName exch def
+	currentdict end definefont pop
+} bind def
+
+/DEFS 0 def
+
+% hpos vpos EBEGIN -
+
+/EBEGIN {
+	moveto
+	DEFS begin
+} bind def
+
+/EEND /end load def
+
+/CNT 0 def
+/level1 0 def
+
+% llx lly newwid wid newht ht newllx newlly PBEGIN -
+
+/PBEGIN {
+	/level1 save def
+	translate
+	div 3 1 roll div exch scale
+	neg exch neg exch translate
+	% set the graphics state to default values
+	0 setgray
+	0 setlinecap
+	1 setlinewidth
+	0 setlinejoin
+	10 setmiterlimit
+	[] 0 setdash
+	/setstrokeadjust where {
+		pop
+		false setstrokeadjust
+	} if
+	/setoverprint where {
+		pop
+		false setoverprint
+	} if
+	newpath
+	/CNT countdictstack def
+	userdict begin
+	/showpage {} def
+} bind def
+
+/PEND {
+	clear
+	countdictstack CNT sub { end } repeat
+	level1 restore
+} bind def
+
+end def
+
+/setpacking where {
+	pop
+	setpacking
+} if
+%%EndResource
+%%IncludeResource: font Times-Bold
+%%IncludeResource: font Times-Italic
+%%IncludeResource: font Times-Roman
+%%IncludeResource: font Courier
+%%IncludeResource: font Times-BoldItalic
+grops begin/DEFS 1 dict def DEFS begin/u{.001 mul}bind def end/RES 72 def/PL
+792 def/LS false def/ENC0[/asciicircum/asciitilde/Scaron/Zcaron/scaron/zcaron
+/Ydieresis/trademark/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef
+/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/.notdef/space/exclam
+/quotedbl/numbersign/dollar/percent/ampersand/quoteright/parenleft/parenright
+/asterisk/plus/comma/hyphen/period/slash/zero/one/two/three/four/five/six/seven
+/eight/nine/colon/semicolon/less/equal/greater/question/at/A/B/C/D/E/F/G/H/I/J
+/K/L/M/N/O/P/Q/R/S/T/U/V/W/X/Y/Z/bracketleft/backslash/bracketright/circumflex
+/underscore/quoteleft/a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z
+/braceleft/bar/braceright/tilde/.notdef/quotesinglbase/guillemotleft
+/guillemotright/bullet/florin/fraction/perthousand/dagger/daggerdbl/endash
+/emdash/ff/fi/fl/ffi/ffl/dotlessi/dotlessj/grave/hungarumlaut/dotaccent/breve
+/caron/ring/ogonek/quotedblleft/quotedblright/oe/lslash/quotedblbase/OE/Lslash
+/.notdef/exclamdown/cent/sterling/currency/yen/brokenbar/section/dieresis
+/copyright/ordfeminine/guilsinglleft/logicalnot/minus/registered/macron/degree
+/plusminus/twosuperior/threesuperior/acute/mu/paragraph/periodcentered/cedilla
+/onesuperior/ordmasculine/guilsinglright/onequarter/onehalf/threequarters
+/questiondown/Agrave/Aacute/Acircumflex/Atilde/Adieresis/Aring/AE/Ccedilla
+/Egrave/Eacute/Ecircumflex/Edieresis/Igrave/Iacute/Icircumflex/Idieresis/Eth
+/Ntilde/Ograve/Oacute/Ocircumflex/Otilde/Odieresis/multiply/Oslash/Ugrave
+/Uacute/Ucircumflex/Udieresis/Yacute/Thorn/germandbls/agrave/aacute/acircumflex
+/atilde/adieresis/aring/ae/ccedilla/egrave/eacute/ecircumflex/edieresis/igrave
+/iacute/icircumflex/idieresis/eth/ntilde/ograve/oacute/ocircumflex/otilde
+/odieresis/divide/oslash/ugrave/uacute/ucircumflex/udieresis/yacute/thorn
+/ydieresis]def/Times-BoldItalic@0 ENC0/Times-BoldItalic RE/Courier@0 ENC0
+/Courier RE/Times-Roman@0 ENC0/Times-Roman RE/Times-Italic@0 ENC0/Times-Italic
+RE/Times-Bold@0 ENC0/Times-Bold RE
+%%EndProlog
+%%Page: 1 1
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 22/Times-Bold@0 SF(Extent\255like Performance fr)179.856 78.16 Q(om)-.396 E
+(a)233.374 100.16 Q/F1 20/Times-Bold@0 SF(UNIX)5.5 E F0(File System)5.5 E/F2 12
+/Times-Italic@0 SF(L. W)190.176 125.36 Q 3(.M)-1.104 G(cV)227.736 125.36 Q
+(oy & S. R. Kleiman)-1.332 E/F3 12/Times-Roman@0 SF 3<ad53>3 G
+(un Microsystems, Inc.)351.168 125.36 Q/F4 12/Times-Bold@0 SF(ABSTRACT)286.83
+151.76 Q/F5 10/Times-Roman@0 SF .416(In an ef)126 168.76 R .416(fort to meet t\
+he increasing throughput demands on the SunOS \214le system made both by)-.18 F
+.71(applications and higher performance hardware, several optimization paths w\
+ere examined. The)126 179.76 R .022(principal constraints were that the on\255\
+disk \214le system format remain the same and that whatever)126 190.76 R 1.457
+(changes were necessary not be user\255visible.)126 201.76 R 1.457
+(The solution arrived at was to approximate the)6.457 F .265(behavior of exten\
+t based \214le systems by grouping I/O operations into clusters instead of dea\
+ling)126 212.76 R .07(in individual blocks.)126 223.76 R 2.57(As)5.07 G .07
+(ingle clustered I/O may take the place of 15\25530 block I/Os, resulting in)
+226.84 223.76 R 6.027(af)126 234.76 S 3.527(actor of two increased sequential \
+performance increase. The changes described were)139.797 234.76 R .188(restric\
+ted to a small portion of the \214le system code; no user\255visible changes w\
+ere necessary and)126 245.76 R(the on-disk format was not altered.)126 256.76 Q
+/F6 10/Times-Bold@0 SF(Intr)172.665 278.76 Q(oduction)-.18 E F5 .89
+(File systems are a common place to \214nd perfor)111.6 295.26 R(-)-.2 E 5.262
+(mance problems. The original)90 306.26 R/F7 8/Times-Roman@0 SF(UNIX)7.761 E F5
+5.261(\214le system)7.761 F .541
+([Thompson] is elegant in its simplicity: it has a single)90 317.26 R 1.874
+(block size and a simple list based allocation policy)90 328.26 R(.)-.65 E
+2.533([McKusick] describes the drawbacks of this design)90 339.26 R 1.533
+(and also describes Berkeley')90 350.26 R 4.033(sf)-.55 G 1.533
+(ast \214le system \(FFS\).)219.992 350.26 R 1.734
+(The fast \214le system solves many performance prob-)90 361.26 R .915
+(lems found in the original)90 372.26 R F7(UNIX)3.414 E F5 .914(\214le system.)
+3.414 F .914(The fast)5.914 F 3.041(\214le system is the basis for UFS, Sun')90
+383.26 R(s)-.55 E F7(UNIX)5.541 E F5(File)5.541 E(System.)90 394.26 Q/F8 8
+/Times-Italic@0 SF(1)-3.2 I F5 .659(UFS has served us well for several years.)
+111.6 408.56 R(How-)5.658 E(ever)90 419.56 Q 7.55(,b)-.4 G 5.05
+(oth applications and disk subsystems are)121.86 419.56 R 2.348
+(demanding higher and higher transfer rates through)90 430.56 R .437
+(the \214le system.)90 441.56 R .438(Applications such as video and sound)5.437
+F .028(require much higher data rates than are available today)90 452.56 R
+1.848(through UFS.)90 463.56 R 1.849(Disk subsystems, such as disk arrays)6.848
+F .506([Patterson], are being developed to deliver the desired)90 474.56 R
+2.048(I/O rates.)90 485.56 R 2.049(Measuring the existing UFS showed that)7.048
+F 1.001(about half of a 12MIPS CPU was used to get half of)90 496.56 R
+(the disk bandwidth of a 1.5MB/second disk.)90 507.56 Q F6
+(Goals and constraints)90 532.31 Q F5 1.823
+(It was clear that the current implementation of)111.6 546.06 R 1.178
+(UFS did not scale to the desired I/O rates, so we set)90 557.06 R 2.052
+(out to improve the system.)90 568.06 R 3.652 -.8(We w)7.052 H 2.053
+(anted a UFS that).8 F .377
+(used less CPU to run the disks at their full bandwidth.)90 579.06 R .239
+(An additional goal was that)90 590.06 R/F9 10/Times-Italic@0 SF(all)2.739 E F5
+.239(users of the \214le system)2.739 F 2.623
+(should bene\214t from the enhancements; the primary)90 601.06 R .72
+(constraint was that the on\255disk format of the \214le sys-)90 612.06 R 2.258
+(tem could not change, The `)90 623.06 R(`dusty\255deck')-.74 E 4.758('a)-.74 G
+(pproach)277.39 623.06 Q .547
+(insured that no application would need to be aware of)90 634.06 R
+(the enhancements.)90 645.06 Q .64 LW 198 679.159 90 679.159 DL F8(1)95 685.959
+Q/F10 9/Times-Roman@0 SF .208(UFS has been modi\214ed to \214t into Sun')3.2 J
+2.458(sv)-.495 G .208(irtual \214le system)249.182 689.159 R .3
+(architecture [Kleiman].)90 699.159 R .3(Other than that, it has been tracking)
+4.8 F(the fast \214le system very closely)90 709.159 Q(.)-.585 E F5 2.913
+(This paper describes an enhancement to UFS)360 278.76 R .964
+(that met all our goals.)338.4 289.76 R .964(The remainder of the paper is)
+5.964 F .859(divided into seven sections.)338.4 300.76 R .858
+(The \214rst section reviews)5.859 F .59(the relevant background material.)
+338.4 311.76 R .59(The second section)5.59 F 3.767
+(discusses several possible solutions to the perfor)338.4 322.76 R(-)-.2 E 3.08
+(mance problems found in UFS.)338.4 333.76 R 3.08(The third section)8.08 F
+4.658(describes the implementation of the solution we)338.4 344.76 R 1.414
+(chose: \214le system I/O clustering.)338.4 355.76 R 1.415(The fourth section)
+6.414 F 1.79(discusses problems found in the interaction between)338.4 366.76 R
+.42(the \214le system and the VM systems.)338.4 377.76 R .42(The next section)
+5.42 F 2.096(presents performance measurements of the modi\214ed)338.4 388.76 R
+1.201(\214le system.)338.4 399.76 R 1.201
+(The sixth section compares this work to)6.201 F 1.968
+(other work in this area.)338.4 410.76 R 1.967(The \214nal section discusses)
+6.967 F(possible future enhancements.)338.4 421.76 Q F6(Backgr)421.895 441.01 Q
+(ound)-.18 E F5 2.25 -.7(To u)360 457.51 T .85
+(nderstand our UFS enhancements, it is nec-).7 F 1.209
+(essary to understand the basics of the SunOS V)338.4 468.51 R(irtual)-.6 E
+5.868(Memory \(VM\) and V)338.4 479.51 R 5.869(irtual File System \(VFS\))-.6 F
+(architectures)338.4 490.51 Q F8(2)-3.2 I F5 9.417(.A)3.2 K 4.417
+(brief review is presented here.)419.544 490.51 R .129
+(More details on the VM system may be found in [Gin-)338.4 501.51 R .943
+(gell] and [Moran].)338.4 512.51 R .943(Readers familiar with the interac-)
+5.943 F .399(tion between the VM system and a \214le system, in par)338.4
+523.51 R(-)-.2 E 3.509(ticular the)338.4 534.51 R/F11 10/Courier@0 SF(rdwr)
+6.009 E F5(,)A F11(getpage)6.008 E F5 6.008(,a)C(nd)475.644 534.51 Q F11
+(putpage)6.008 E F5(VFS)6.008 E .577
+(interfaces, may wish to skip forward to the section on)338.4 545.51 R 2.872
+(UFS performance problems.)338.4 556.51 R 2.872(Readers familiar with)7.872 F
+2.118(either FFS or UFS, in particular the reasons for its)338.4 567.51 R .053
+(rotational delay)338.4 578.51 R 2.553(,m)-.65 G .052
+(ay skip past the section on UFS per)413.126 578.51 R(-)-.2 E 1.83
+(formance problems.)338.4 589.51 R 1.83(Readers are expected to under)6.83 F(-)
+-.2 E 1.021(stand the original)338.4 600.51 R F7(UNIX)3.521 E F5 1.021
+(I/O system \(the buf)3.521 F 1.021(fer cache\))-.18 F
+(explained in [Bach] and [Ritchie].)338.4 611.51 Q 446.4 679.159 338.4 679.159
+DL F8(2)343.4 685.959 Q F10 1.931
+(The VM and VFS architectures are similar to those in)3.2 J 1.215
+(System V release 4.)338.4 699.159 R -.54(Vi)5.715 G 1.215
+(rtually all references to SunOS are).54 F(also applicable to SVR4.)338.4
+709.159 Q F6(USENIX \255 W)90 744.96 Q(inter '91 \255 Dallas, TX)-.18 E F5(1)
+553 744.96 Q EP
+%%Page: 2 2
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Times-Bold@0 SF(Extent\255like Performance fr)54 32.16 Q(om a)-.18 E/F1
+8/Times-Bold@0 SF(UNIX)2.5 E F0(File System)2.5 E(McV)441.82 32.16 Q
+(oy & Kleiman)-.92 E -.37(Vi)54 67.16 S(rtual \214le system interfaces).37 E/F2
+10/Times-Roman@0 SF 2.077(The SunOS virtual \214le system \(VFS\) interface)
+75.6 80.91 R .49([Kleiman] allows the kernel to support many dif)54 91.91 R
+(ferent)-.18 E .393(types of \214le systems simultaneously)54 102.91 R 5.393
+(.E)-.65 G .393(ach \214le system)213.374 102.91 R .509
+(type implements two object classes:)54 113.91 R/F3 10/Times-Italic@0 SF(vfs)
+3.009 E F2(and)3.009 E F3(vnode)3.008 E F2 5.508(.A)C 1.9
+(VFS object represents a particular instance of a \214le)54 124.91 R 4.949
+(system. A)54 135.91 R 2.448(vnode object represents a particular \214le)4.949
+F .542(within a VFS.)54 146.91 R .543(These objects export interface routines)
+5.543 F .796(that the main body of the kernel uses to manipulate a)54 157.91 R
+1.652(\214le system without knowing the details of how it is)54 168.91 R 2.612
+(implemented. A)54 179.91 R .111(\214le system type may be thought of as)2.611
+F 3.292(ad)54 190.91 S .792
+(river that provides a set of \214le system abstractions)66.732 190.91 R
+(without exposing the details of the implementation.)54 201.91 Q .83
+(There are many entry points into a VFS, but we)75.6 216.21 R 4.663
+(need concern ourselves only with the read/write)54 227.21 R(\()54 238.21 Q/F4
+10/Courier@0 SF(rdwr)A F2 .191(\), read a page \()B F4(getpage)A F2 .191
+(\), and the write a page)B(\()54 249.21 Q F4(putpage)A F2 3.593(\)i)C 3.593
+(nterfaces. These)109.033 249.21 R 1.094(are the interfaces used)3.593 F .457
+(by the)54 260.21 R F4(read)2.957 E F2(,)A F4(write)2.957 E F2 2.957(,a)C(nd)
+151.488 260.21 Q F4(mmap)2.957 E F2 .456(system calls that the)2.957 F
+(programmer sees.)54 271.21 Q(The)75.6 285.51 Q F4(getpage)5.636 E F2 3.137
+(interface returns a page \214lled)5.636 F .37
+(with data from the vnode at the \214le of)54 296.51 R .37(fset speci\214ed by)
+-.18 F .576(the caller)54 307.51 R 5.576(.T)-.55 G .576
+(he \214le system may use a page cache sup-)105.142 307.51 R .38
+(plied by the VM system to store active page data. The)54 318.51 R 1.02
+(entries in this cache are named by the vnode and \214le)54 329.51 R(of)54
+340.51 Q .099(fset of the data in the page.)-.18 F(The)5.099 E F4(putpage)2.599
+E F2(interface)2.598 E(is used to return a page to secondary storage.)54 351.51
+Q 1.253(In most SunOS \214le systems, the)75.6 365.81 R F4(getpage)3.753 E F2
+(and)3.753 E F4(putpage)54 376.81 Q F2 .776
+(routines are where the I/O actually occurs.)3.276 F .104
+(It is important to understand that)54 387.81 R F4(getpage)2.604 E F2(and)2.604
+E F4(put-)2.604 E(page)54 398.81 Q F2 1.082(are used asymmetrically)3.582 F(.)
+-.65 E F4(getpage)6.082 E F2 1.081(is usually)3.581 F 1.349
+(called \214rst both for reading and writing.)54 409.81 R 1.349(In the read)
+6.349 F .649(case it is called to retrieve that data from the disk.)54 420.81 R
+(In)5.649 E .014(the write case it is called to get a copy of the data to be)54
+431.81 R(modi\214ed.)54 442.81 Q F4(putpage)6.16 E F2 1.16
+(is only called when the page is)3.66 F(to be written to the backing storage.)
+54 453.81 Q .017(When a process uses the)75.6 468.11 R F4(read)2.518 E F2(or)
+2.518 E F4(write)2.518 E F2(system)2.518 E 1.923
+(call, the kernel redirects the call to the)54 479.11 R F4(rdwr)4.423 E F2
+(entry)4.423 E .217(point of the appropriate VFS.)54 490.11 R F4(rdwr)5.218 E
+F2 .218(copies the appro-)2.718 F 2.204(priate \214le data to or from a buf)54
+501.11 R 2.204(fer supplied by the)-.18 F(caller)54 512.11 Q 3.59(.U)-.55 G
+1.09(sually this is the buf)88.97 512.11 R 1.09(fer speci\214ed by the pro-)
+-.18 F 1.241(cess in the read or write system call.)54 523.11 R 1.241
+(Many \214le sys-)6.241 F 1.881(tems implement)54 534.11 R F4(rdwr)4.381 E F2
+1.881(by mapping a portion of the)4.381 F .114(\214le into the kernel')54
+545.11 R 2.613(sa)-.55 G .113(ddress space and then copying to)141.115 545.11 R
+(or from the user)54 556.11 Q 1.1 -.55('s b).37 H(uf).55 E(fer)-.18 E(.)-.55 E
+F0(SunOS virtual memory system)54 580.86 Q F2 .549
+(The SunOS VM model is similar to that of Mul-)75.6 594.61 R .809(tics [Or)54
+605.61 R .809(ganick] and TENEX [Bobrow].)-.18 F .808(The VM sys-)5.808 F .018
+(tem works in concert with the \214le systems to manage a)54 616.61 R .323
+(cache of vnode pages.)54 627.61 R 1.722 -.7(To i)5.323 H .322
+(llustrate the caching mech-).7 F .197(anism, we describe the VM system')54
+638.61 R 2.698(sm)-.55 G .198(anagement of a)212.114 638.61 R 1.564
+(simple address space.)54 649.61 R 1.563(The address space, associated)6.563 F
+.38(with a process, is made up of a collection of segments)54 660.61 R
+(each of which refers to a portion of a \214le \(vnode\).)54 671.61 Q 320.4
+211.16 MT 0 -144 RL -18 0 RL 0 144 RL CL .4 LW ST(as)307.235 141.36 Q 365.4
+130.16 MT 0 -54 RL -32.4 0 RL 0 54 RL CL ST(seg1)340.035 99.86 Q(vnode1)335.73
+110.86 Q 376.2 108.92 365.4 108.92 DL 376.2 108.92 MT -7.2 1.8 RL 0 -3.6 RL CL
+BL 376.2 108.92 MT -7.2 1.8 RL 0 -3.6 RL CL ST 333 95.96 322.2 95.96 DL 333
+95.96 MT -7.2 1.8 RL 0 -3.6 RL CL BL 333 95.96 MT -7.2 1.8 RL 0 -3.6 RL CL ST
+419.4 130.16 MT 0 -54 RL -43.2 0 RL 0 54 RL CL ST(VFS1)386.13 88.86 Q(\(UFS\))
+385.3 99.86 Q([text])386.97 110.86 Q(a.out)387.94 121.86 Q 28.8 10.8 444.6
+74.36 DE ST 430.2 95.96 430.2 74.36 DL 459 95.96 459 74.36 DL 444.6 71.048
+28.774 120.0294 59.9706 DA(UFS)435.43 88.8 Q(disk)436.265 96 Q 430.2 85.16
+419.4 85.16 DL 430.2 85.16 MT -7.2 1.8 RL 0 -3.6 RL CL BL 430.2 85.16 MT -7.2
+1.8 RL 0 -3.6 RL CL ST 365.4 202.16 MT 0 -54 RL -32.4 0 RL 0 54 RL CL ST(seg2)
+340.035 171.86 Q(vnode2)335.73 182.86 Q 376.2 180.92 365.4 180.92 DL 376.2
+180.92 MT -7.2 1.8 RL 0 -3.6 RL CL BL 376.2 180.92 MT -7.2 1.8 RL 0 -3.6 RL CL
+ST 333 167.96 322.2 167.96 DL 333 167.96 MT -7.2 1.8 RL 0 -3.6 RL CL BL 333
+167.96 MT -7.2 1.8 RL 0 -3.6 RL CL ST 419.4 202.16 MT 0 -54 RL -43.2 0 RL 0 54
+RL CL ST(VFS2)386.13 160.86 Q(\(NFS\))385.3 171.86 Q([lib])389.19 182.86 Q
+(libc.so)384.605 193.86 Q 28.8 10.8 444.6 146.36 DE ST 430.2 167.96 430.2
+146.36 DL 459 167.96 459 146.36 DL 444.6 143.048 28.774 120.0294 59.9706 DA
+(NFS)435.43 160.8 Q(server)432.385 168 Q 430.2 157.16 419.4 157.16 DL 430.2
+157.16 MT -7.2 1.8 RL 0 -3.6 RL CL BL 430.2 157.16 MT -7.2 1.8 RL 0 -3.6 RL CL
+ST 467.64 211.16 464.04 211.16 DL 474.912 211.16 471.312 211.16 DL 482.256
+211.16 478.656 211.16 DL 489.528 211.16 485.928 211.16 DL 496.872 211.16
+493.272 211.16 DL 504.144 211.16 500.544 211.16 DL 511.488 211.16 507.888
+211.16 DL 518.76 211.16 515.16 211.16 DL 518.76 207.56 518.76 211.16 DL 518.76
+200.504 518.76 204.104 DL 518.76 193.52 518.76 197.12 DL 518.76 186.536 518.76
+190.136 DL 518.76 179.48 518.76 183.08 DL 518.76 172.424 518.76 176.024 DL
+518.76 165.44 518.76 169.04 DL 518.76 158.384 518.76 161.984 DL 518.76 151.4
+518.76 155 DL 518.76 144.416 518.76 148.016 DL 518.76 137.36 518.76 140.96 DL
+518.76 130.304 518.76 133.904 DL 518.76 123.32 518.76 126.92 DL 518.76 116.264
+518.76 119.864 DL 518.76 109.28 518.76 112.88 DL 518.76 102.224 518.76 105.824
+DL 518.76 95.24 518.76 98.84 DL 518.76 88.256 518.76 91.856 DL 518.76 81.2
+518.76 84.8 DL 518.76 74.144 518.76 77.744 DL 518.76 67.16 518.76 70.76 DL
+515.16 67.16 518.76 67.16 DL 507.888 67.16 511.488 67.16 DL 500.544 67.16
+504.144 67.16 DL 493.272 67.16 496.872 67.16 DL 485.928 67.16 489.528 67.16 DL
+478.656 67.16 482.256 67.16 DL 471.312 67.16 474.912 67.16 DL 464.04 67.16
+467.64 67.16 DL 464.04 70.76 464.04 67.16 DL 464.04 77.816 464.04 74.216 DL
+464.04 84.8 464.04 81.2 DL 464.04 91.784 464.04 88.184 DL 464.04 98.84 464.04
+95.24 DL 464.04 105.896 464.04 102.296 DL 464.04 112.88 464.04 109.28 DL 464.04
+119.864 464.04 116.264 DL 464.04 126.92 464.04 123.32 DL 464.04 133.976 464.04
+130.376 DL 464.04 140.96 464.04 137.36 DL 464.04 148.016 464.04 144.416 DL
+464.04 155 464.04 151.4 DL 464.04 162.056 464.04 158.456 DL 464.04 169.04
+464.04 165.44 DL 464.04 176.096 464.04 172.496 DL 464.04 183.08 464.04 179.48
+DL 464.04 190.064 464.04 186.464 DL 464.04 197.12 464.04 193.52 DL 464.04
+204.176 464.04 200.576 DL 464.04 211.16 464.04 207.56 DL(page)481.96 78.16 Q
+(cache)480.02 87.52 Q 515.88 119.44 MT 0 -21.6 RL -48.96 0 RL 0 21.6 RL CL ST
+(a.out)481.54 105.84 Q(of)472.745 115.84 Q(fset 0K)-.18 E 466.92 108.64 419.4
+120.16 DL 466.92 108.64 MT -6.552 3.456 RL -.864 -3.528 RL CL BL 466.92 108.64
+MT -6.552 3.456 RL -.864 -3.528 RL CL ST 515.88 148.24 MT 0 -21.6 RL -48.96 0
+RL 0 21.6 RL CL ST(a.out)481.54 134.64 Q(of)470.245 144.64 Q(fset 16K)-.18 E
+466.92 137.44 419.4 120.16 DL 466.92 137.44 MT -7.416 -.792 RL 1.224 -3.384 RL
+CL BL 466.92 137.44 MT -7.416 -.792 RL 1.224 -3.384 RL CL ST 515.88 180.64 MT 0
+-21.6 RL -48.96 0 RL 0 21.6 RL CL ST(libc.so)478.205 167.04 Q(of)470.245 177.04
+Q(fset 32K)-.18 E 466.92 169.84 419.4 192.16 DL 466.92 169.84 MT -5.76 4.68 RL
+-1.512 -3.24 RL CL BL 466.92 169.84 MT -5.76 4.68 RL -1.512 -3.24 RL CL ST
+515.88 209.44 MT 0 -21.6 RL -48.96 0 RL 0 21.6 RL CL ST(libc.so)478.205 195.84
+Q(of)470.245 205.84 Q(fset 36K)-.18 E 466.92 198.64 419.4 192.16 DL 466.92
+198.64 MT -7.344 .792 RL .504 -3.6 RL CL BL 466.92 198.64 MT -7.344 .792 RL
+.504 -3.6 RL CL ST F0(Figur)358.265 227.66 Q 2.5(e1)-.18 G F2 2.5(:T)393.915
+227.66 S(he VM system.)405.305 227.66 Q .865
+(Figure 1 shows a simple address space made up)324 241.96 R .822
+(of two \214les:)302.4 252.96 R F4(a.out)3.322 E F2 3.323(,a\214)C .823
+(le from a local UFS \214le sys-)404.292 252.96 R 3.864(tem, and)302.4 263.96 R
+F4(libc.so)6.364 E F2 6.363(,ad)C 3.863(ynamically linked shared)413.734 263.96
+R(library from a remote NFS \214le system.)302.4 274.96 Q F3(Page faults)302.4
+299.71 Q F2 2.543(When a process references an address for the)324 313.46 R
+.158(\214rst time, a page fault occurs.)302.4 324.46 R .158
+(The fault is resolved by)5.158 F 1.02
+(traversing the object hierarchy and invoking the fault)302.4 335.46 R .757
+(handlers for each object type.)302.4 346.46 R(Speci\214cally)5.757 E 3.257(,t)
+-.65 G .757(he kernel)484.313 346.46 R .025
+(\214nds the address space associated with the process and)302.4 357.46 R 1.219
+(calls the address fault handler)302.4 368.46 R 3.719(,p)-.4 G 1.218
+(assing it the faulting)436.955 368.46 R 2.942(address. The)302.4 379.46 R .443
+(address fault handler uses the address to)2.942 F 2.127
+(\214nd the enclosing segment and calls that segment')302.4 390.46 R(s)-.55 E
+2.346(fault handler)302.4 401.46 R 7.346(.T)-.55 G 2.347(he segment')370.972
+401.46 R 4.847(sf)-.55 G 2.347(ault handler converts)433.436 401.46 R .196
+(the address into a <vnode, of)302.4 412.46 R .195(fset> pair and calls)-.18 F
+F4(get-)2.695 E(page)302.4 423.46 Q F2 1.906(of the associated \214le system.)
+4.405 F(The)6.906 E F4(getpage)4.406 E F2 1.099
+(routine \214rst requests the VM system to \214nd the page)302.4 434.46 R .57
+(denoted by the <vnode, of)302.4 445.46 R .57(fset> ar)-.18 F 3.07(gument. If)
+-.18 F .57(the page)3.07 F .979(is found in the page cache, it is returned.)
+302.4 456.46 R(Otherwise,)5.978 E 1.101
+(the page is not in memory and the \214le system has to)302.4 467.46 R .445
+(retrieve the page from secondary store.)302.4 478.46 R .445(After the data)
+5.445 F .38(has been retrieved, the \214le system puts the page in the)302.4
+489.46 R(page cache for future reference.)302.4 500.46 Q 1.723
+(An important point is that there is no longer a)324 514.76 R 3.875
+(distinction between process pages and I/O pages.)302.4 525.76 R .186
+(Pages are brought into the system for dif)302.4 536.76 R .186(ferent reasons)
+-.18 F .639(but they are all labeled in the same way)302.4 547.76 R 5.639(.T)
+-.65 G .639(his uni\214ed)479.411 547.76 R 1.348
+(naming scheme allows all of memory to be used for)302.4 558.76 R 1.238
+(any purpose, based on demand.)302.4 569.76 R 1.239(All of memory may)6.239 F
+.447(be an I/O cache if the system is acting primarily as an)302.4 580.76 R
+.305(I/O server)302.4 591.76 R 2.805(,o)-.4 G 2.805(ra)352.87 591.76 S .305
+(ll of memory may be used up for a sin-)363.445 591.76 R .334(gle lar)302.4
+602.76 R .334(ge active process.)-.18 F(Older)5.334 E/F5 8/Times-Roman@0 SF
+(UNIX)2.834 E F2 .334(variants con\214ned)2.834 F(I/O pages to a small `)302.4
+613.76 Q(`buf)-.74 E(fer cache.')-.18 E(')-.74 E F0(UFS details)302.4 638.51 Q
+F2 2.548(The UFS implementation uses several internal)324 652.26 R 2.447
+(concepts, such as inode, dinode, logical block, and)302.4 663.26 R 1.761
+(physical block.)302.4 674.26 R 1.761(These are explained in [Lef)6.761 F 1.762
+(\215er] but)-.18 F(we brie\215y review them here.)302.4 685.26 Q F0 312.06(2U)
+54 744.96 S(SENIX \255 W)378.28 744.96 Q(inter '91 \255 Dallas, TX)-.18 E EP
+%%Page: 3 3
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Times-Bold@0 SF(McV)90 32.16 Q(oy & Kleiman)-.92 E
+(Extent\255like Performance fr)344.86 32.16 Q(om a)-.18 E/F1 8/Times-Bold@0 SF
+(UNIX)2.5 E F0(File System)2.5 E/F2 10/Times-Roman@0 SF 2.1
+(UFS represents each active \214le with an)111.6 67.16 R/F3 10/Times-Italic@0
+SF(inode)4.6 E F2(.)A 2.997(An inode is an in\255memory version of the control)
+90 78.16 R .715(information associated with a \214le; the inode is initial-)90
+89.16 R 2.685(ized when the \214le is \214rst read from disk from an)90 100.16
+R 1.563(on\255disk structure called the)90 111.16 R F3(dinode)4.063 E F2 6.563
+(.T)C 1.563(he inode con-)252.045 111.16 R .946
+(tains information such as \214le size, the location of the)90 122.16 R 1.103
+(\214rst few data blocks on disk, date created, etc.)90 133.16 R(Each)6.103 E
+.579(inode is directly associated with a vnode.)90 144.16 R .579(Inodes also)
+5.579 F 1.34(contain meta information that the \214le system uses to)90 155.16
+R .458(help tune performance. W)90 166.16 R 2.959(ed)-.8 G .459
+(iscuss this information in)207.383 166.16 R(the)90 177.16 Q/F4 10/Courier@0 SF
+(ufs_getpage)2.5 E F2(section below)2.5 E(.)-.65 E 1.419
+(UFS breaks up each \214le into)111.6 191.46 R F3 1.418(logical blocks)3.919 F
+F2 6.418(.A)C 1.424(logical block is the main unit of allocation in UFS)90
+202.46 R/F5 8/Times-Italic@0 SF(3)-3.2 I F2(.)3.2 I 1.893
+(Logical block numbers, or lbns, are numbered from)90 213.46 R .827
+(zero and denote a particular block of a particular \214le.)90 224.46 R 1.136
+(Logical blocks are used for two reasons: to decouple)90 235.46 R .574
+(the \214le system block size from the disk block \(or sec-)90 246.46 R .876
+(tor\) size, and to decouple the location of a block in a)90 257.46 R
+(\214le from the location of the block on the disk.)90 268.46 Q F3(ufs_r)90
+293.21 Q(dwr)-.37 E F4(ufs_rdwr)111.6 306.96 Q F2 3.34
+(performs a read by breaking the)5.84 F 3.043
+(request into block sized pieces, mapping each \214le)90 317.96 R 2.704
+(block in turn to an unused portion of the kernel')90 328.96 R(s)-.55 E .685
+(address space, copying the data to the requesting pro-)90 339.96 R
+(cess, and unmapping the block.)90 350.96 Q .936
+(If the page representing the block is not already)111.6 365.26 R .751
+(in memory with an active MMU translation, the copy)90 376.26 R 2.731
+(will fault.)90 387.26 R 2.731(The kernel handles the fault by calling)7.731 F
+F4(ufs_getpage)90 398.26 Q F2 1.911(to \214nd the page.)4.412 F 1.911
+(After the page is)6.911 F 1.162
+(retrieved, the MMU translation to the page is set up,)90 409.26 R 2.375
+(the fault returns, and)90 420.26 R F4(ufs_rdwr)4.874 E F2 2.374
+(\214nishes the copy)4.874 F(unaware that the fault ever occurred.)90 431.26 Q
+.519(Repeated accesses to the same page will \214nd the)111.6 445.56 R 2.105
+(page still in memory with an active translation and)90 456.56 R
+(will avoid multiple page faults.)90 467.56 Q .984
+(The work done for a write is similar)111.6 481.86 R 5.985(.T)-.55 G .985
+(he main)276.675 481.86 R(dif)90 492.86 Q 1.714
+(ference is that when the block is unmapped from)-.18 F 1.103(the kernel')90
+503.86 R 3.603(sa)-.55 G 1.104(ddress space after each block is copied,)145.526
+503.86 R F4(ufs_putpage)90 514.86 Q F2 1.297
+(will be called to start the I/O to the)3.797 F(disk.)90 525.86 Q F4(ufs_rdwr)
+126.882 525.86 Q F2 12.712(can also request that)190.094 525.86 R F4 6.9
+(ufs_putpagewait until the I/O is)90 536.86 R .9
+(complete \(synchronous write\) or that)90 547.86 R 4.6
+(it return after the I/O has been)90 558.86 R(started.)90 569.86 Q F3
+(ufs_getpage)90 594.61 Q F2(When)111.6 608.36 Q F4(ufs_getpage)2.708 E F2 .209
+(is called, it \214rst checks to)2.708 F 1.598
+(see whether the page is actually already in the page)90 619.36 R .826
+(cache and returns the page if it is.)90 630.36 R .826(Otherwise, it con-)5.826
+F 1.852(verts the vnode and of)90 641.36 R 1.851
+(fset into the equivalent inode)-.18 F 1.849
+(and logical block number and calls)90 652.36 R F4(bmap)4.349 E F2 4.349(,w)C
+1.849(hich is)281.361 652.36 R .786
+(responsible for mapping logical blocks of an inode to)90 663.36 R .64 LW 198
+679.159 90 679.159 DL F5(3)95 685.959 Q/F6 9/Times-Roman@0 SF 1.123
+(For the purposes of this discussion, we will assume that)3.2 J .262
+(the size of a block is always greater than or equal to the size)90 699.159 R
+(of a page.)90 709.159 Q F2 .24
+(physical blocks on the disk as well as the allocation of)338.4 67.16 R .914
+(physical blocks on disk.)338.4 78.16 R .913(It uses the block pointers in)
+5.913 F 1.007(the inode to perform the translation, unless the \214le is)338.4
+89.16 R(lar)338.4 100.16 Q 1.01
+(ge, in which case the inode contains a pointer to a)-.18 F .852
+(disk block of pointers; this block is called an indirect)338.4 111.16 R 3.763
+(block. For)338.4 122.16 R(lar)3.763 E 1.262(ge \214les,)-.18 F F4(bmap)3.762 E
+F2 1.262(needs to fetch the indi-)3.762 F 2.368
+(rect block to perform the translation.)338.4 133.16 R 2.369(The physical)7.369
+F .229(block number returned by)338.4 144.16 R F4(bmap)2.729 E F2 .229
+(is used to start up the)2.729 F(I/O.)338.4 155.16 Q(The)360 169.46 Q F4
+(ufs_getpage)4.514 E F2 2.014(routine is complicated by)4.514 F 1.793
+(the heuristics for optimizing read performance.)338.4 180.46 R(The)6.793 E
+(algorithm is shown in \214gure 2.)338.4 191.46 Q .4 LW 558 201.36 338.4 201.36
+DL F4(bmap\(\) to find disk location)345.6 217.86 Q
+(if \(requested page not in cache\) {)345.6 228.86 Q(start I/O for requested)
+381.6 239.86 Q(})345.6 250.86 Q(if \(sequential I/O\) {)345.6 261.86 Q
+(do another bmap\(\) if necessary)381.6 272.86 Q(start I/O for next page)381.6
+283.86 Q(})345.6 294.86 Q(if \(first page was not in cache\) {)345.6 305.86 Q
+(wait for I/O to finish)381.6 316.86 Q(})345.6 327.86 Q
+(predict next I/O location)345.6 338.86 Q 558 349.86 338.4 349.86 DL F0(Figur)
+379.82 366.36 Q 2.5(e2)-.18 G F2 2.5(:U)415.47 366.36 S(FS getpage algorithm.)
+427.97 366.36 Q 10.94(In the absence of other information,)360 380.66 R F4
+(ufs_getpage)338.4 391.66 Q F2 3.937(uses the pattern of logical block)6.437 F
+.575(requests it sees to predict the \214le access pattern in the)338.4 402.66
+R .854(near future.)338.4 413.66 R .854
+(If the pattern of requests is such that the)5.854 F 3.915
+(current request is one page greater than the last)338.4 424.66 R 1.687
+(request, it is assumed that the \214le is being accessed)338.4 435.66 R
+(sequentially)338.4 446.66 Q 12.836(.I)-.65 G 10.336(fs)404.746 446.66 S 7.836
+(equential access is detected,)422.302 446.66 R F4(ufs_getpage)338.4 457.66 Q
+F2 1.351(predicts that the next access will be)3.852 F 3.079
+(to the page following the requested page.)338.4 468.66 R 3.079(In this)8.079 F
+(event,)338.4 479.66 Q F4(ufs_getpage)3.069 E F2(will)3.069 E F3 -.37(re)3.069
+G .569(ad ahead).37 F F2 3.068(,i)C .568(.e., will start)507.144 479.66 R
+(the I/O for the page following the one requested.)338.4 490.66 Q 410.4 535.66
+MT 0 -36 RL -72 0 RL 0 36 RL CL .32 LW ST/F7 8/Times-Roman@0 SF(page 0)363.848
+505.92 Q(sync read page 0)347.632 514.92 Q(async read page 1)345.856 523.92 Q
+(nextr = 1)359.924 532.92 Q 482.4 535.66 MT 0 -36 RL -72 0 RL 0 36 RL CL ST
+(page 1)435.848 505.92 Q(async read page 2)417.856 523.92 Q(nextr = 2)431.924
+532.92 Q 554.4 535.66 MT 0 -36 RL -72 0 RL 0 36 RL CL ST(page 2)507.848 505.92
+Q(async read page 3)489.856 523.92 Q(nextr = 3)503.924 532.92 Q F0(Figur)
+357.345 554.16 Q 2.5(e3)-.18 G(:)392.995 554.16 Q F2
+(access pattern showing read ahead.)2.5 E .37
+(The series of events that will cause read ahead is)360 573.96 R .3
+(illustrated in \214gure 3.)338.4 584.96 R .3(Each box represents a page and)
+5.3 F 2.274(shows what happens when a fault is taken for that)338.4 595.96 R
+2.848(page. The)338.4 606.96 R .347
+(\214rst fault \(for page 0\) will start an I/O read)2.848 F .342
+(for page 0 and also start up an I/O read ahead on page)338.4 617.96 R 2.516
+(1. The)338.4 628.96 R .016
+(next fault \(for page 1\) will \214nd page 1 in mem-)2.516 F
+(ory and will start up a read on page 2 and so on.)338.4 639.96 Q 1.571
+(In \214gure 3, the \214rst page fault caused both the)360 654.26 R .858
+(primary read and the read ahead.)338.4 665.26 R .857(Since the fault was)5.858
+F .421(for the beginning of the \214le, it may seem that the read)338.4 676.26
+R .025(ahead heuristic should not have been enabled.)338.4 687.26 R .025
+(The \214le)5.025 F 2.798(system uses an inode \214eld,)338.4 698.26 R F4
+(nextr)5.299 E F2 5.299(,t)C 5.299(op)502.412 698.26 S 2.799(redict the)517.711
+698.26 R 5.302(location of the next read.)338.4 709.26 R 5.301
+(When the inode is)469.607 709.26 R F0(USENIX \255 W)90 744.96 Q
+(inter '91 \255 Dallas, TX)-.18 E F1(3)554 744.96 Q EP
+%%Page: 4 4
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Times-Bold@0 SF(Extent\255like Performance fr)54 32.16 Q(om a)-.18 E/F1
+8/Times-Bold@0 SF(UNIX)2.5 E F0(File System)2.5 E(McV)441.82 32.16 Q
+(oy & Kleiman)-.92 E/F2 10/Times-Roman@0 SF(initialized,)54 67.16 Q/F3 10
+/Courier@0 SF(nextr)4.257 E F2 1.758(is set to zero, predicting that the)4.257
+F 1.683(\214rst read will be the \214rst block of the \214le.)54 78.16 R
+(Starting)6.683 E .155
+(read ahead at the beginning of the \214le turns out to be a)54 89.16 R
+(bene\214cial heuristic.)54 100.16 Q/F4 10/Times-Italic@0 SF(ufs_putpage)54
+124.91 Q F2 .936(When the kernel wishes to free some pages that)75.6 138.66 R
+.612(contain modi\214ed data, it calls the appropriate \214le sys-)54 149.66 R
+(tem')54 160.66 Q(s)-.55 E F3(putpage)2.692 E F2(routine.)2.692 E F3(putpage)
+5.192 E F2 .191(simply writes out)2.692 F .077
+(the page data to the correct location on secondary stor)54 171.66 R(-)-.2 E
+(age.)54 182.66 Q F0(UFS performance pr)54 207.41 Q(oblems)-.18 E F2 1.503
+(This section considers the reasons that \214le sys-)75.6 221.16 R .857
+(tem operations in UFS are so expensive.)54 232.16 R .858(The answer)5.858 F
+4.29(comes in two parts: computational overhead and)54 243.16 R .617
+(placement policy)54 254.16 R 5.617(.T)-.65 G .618
+(here is little that can be done that)136.794 254.16 R .867
+(will reduce the computational overhead.)54 265.16 R .866(The compu-)5.866 F
+1.551(tational cost can be amortized by moving more data)54 276.16 R 1.473
+(for each traversal of the \214le system code.)54 287.16 R 1.473(This idea)
+6.473 F 2.272(was a basic motivation for the FFS changes to the)54 298.16 R
+(original)54 309.16 Q/F5 8/Times-Roman@0 SF(UNIX)4.152 E F2 1.651
+(\214le system.)4.151 F 1.651(Placement policy is more)6.651 F 5.495
+(interesting. Even)54 320.16 R 2.995(if we reduced the computational)5.495 F
+.577(overhead to zero, the \214le system could not deliver the)54 331.16 R
+(data faster than half the disk transfer rate.)54 342.16 Q F4(Placement policy)
+54 366.91 Q F2 .735(While UFS has many tuning parameters, includ-)75.6 380.66 R
+1.038(ing ones that af)54 391.66 R 1.038(fect the placement policy)-.18 F 3.538
+(,i)-.65 G 3.537(ti)230.406 391.66 S 3.537(sa)239.503 391.66 S(lmost)251.37
+391.66 Q(always tuned in the same way)54 402.66 Q(.)-.65 E 158.4 453.26 18 DC
+.4 LW ST(disk)150.065 455.46 Q 158.4 453.26 39.6 DC ST 130.392 425.252 145.656
+440.516 DL 118.8 453.26 140.4 453.26 DL 158.4 413.66 158.4 435.26 DL 186.408
+425.252 171.144 440.516 DL 158.4 492.86 158.4 471.26 DL 186.408 481.268 171.144
+466.004 DL 130.392 481.268 145.656 466.004 DL 198 453.26 176.4 453.26 DL(0)
+167.42 430.26 Q(1)183.26 467.7 Q(2)145.82 483.54 Q(3)129.98 446.1 Q F0(Figur)
+105.29 509.36 Q 2.5(e4)-.18 G F2 2.5(:I)140.94 509.36 S(nterleaved blocks.)
+149.55 509.36 Q .241
+(Blocks from a single \214le are placed as shown in \214gure)54 525.86 R 4.109
+(4i)54 536.86 S 4.109(nw)65.889 536.86 S 1.608
+(hich you are looking down on one track of a)82.218 536.86 R .976(disk platter)
+54 547.86 R 5.976(.\()-.55 G .977(The unlabeled blocks will be used by a)
+110.952 547.86 R(dif)54 558.86 Q .533(ferent \214le.\))-.18 F .532
+(The \214le system is responsible for plac-)5.533 F 1.202
+(ing the logical blocks on the disk in a pattern that is)54 569.86 R .307
+(optimal for sequential access.)54 580.86 R .307(Each block is separated)5.307
+F .644(by a gap called the rotational delay or)54 591.86 R F3(rotdelay)3.145 E
+F2(by)3.145 E .534(the \214le system code)54 602.86 R/F6 8/Times-Italic@0 SF(4)
+-3.2 I F2(.)3.2 I F3(rotdelay)5.534 E F2 .533(is speci\214ed in mil-)3.034 F
+2.989(liseconds and the minimum non\255zero value is the)54 613.86 R 1.161
+(rotational delay of one block time.)54 624.86 R 1.161(For a \214le system)
+6.161 F .191(with a block size of 8KB this is 4 milliseconds on typ-)54 635.86
+R .542(ical disks.)54 646.86 R .541(The number of blocks placed contiguously)
+5.542 F .893(between each rotational delay is known as)54 657.86 R F3(maxcon-)
+3.393 E(tig)54 668.86 Q F2(.)A F3(maxcontig)6.369 E F2 1.369
+(is typically set to 1 as shown in)3.869 F(\214gure 4.)54 679.86 Q F4
+(Rotational delay)302.4 67.16 Q F2 4.298
+(Why is the rotational delay necessary?)324 80.91 R -.8(We)9.298 G 1.226
+(already know that the \214le system does read ahead to)302.4 91.91 R 4.014
+(avoid delays in sequential access.)302.4 102.91 R 4.013(The rotational)9.013 F
+.173(delays allow the \214le system enough time to deliver the)302.4 113.91 R
+.13(current block to the requesting process, for the process)302.4 124.91 R
+.362(to compute using the new data then generate a request)302.4 135.91 R .118
+(for the next block, and for the \214le system to check that)302.4 146.91 R
+.794(the requested block is in memory \(due to read ahead\))302.4 157.91 R
+2.771(and generate the disk I/O for the next read ahead)302.4 168.91 R 4.68
+(block. If)302.4 179.91 R 2.18(the \214le system is properly tuned, the I/O)
+4.68 F .629(request will get to the disk as the appropriate block is)302.4
+190.91 R 1.97(moving under the head.)302.4 201.91 R 1.97
+(If there were no rotational)6.97 F(delay)302.4 212.91 Q 2.712(,t)-.65 G .211
+(he next block would already have started under)331.402 212.91 R 1.879
+(the disk head by the time the disk saw the request.)302.4 223.91 R 2.21
+(The disk would have to wait almost a full rotation)302.4 234.91 R 1.017
+(\(about 16 milliseconds on today')302.4 245.91 R 3.517(sd)-.55 G 1.017
+(isks\) before start-)449.985 245.91 R(ing that request.)302.4 256.91 Q 1.107
+(This explains why the rotational delay is neces-)324 271.21 R 1.861
+(sary but we can see that it comes at a cost: having)302.4 282.21 R .65
+(those holes reduces the maximum transfer rate to half)302.4 293.21 R .747
+(that of the disk rate.)302.4 304.21 R 2.148 -.7(To s)5.748 H .748
+(olve this performance prob-).7 F 1.029
+(lem, the rotational delays must be eliminated and the)302.4 315.21 R 5.585
+(computational overhead of the system must be)302.4 326.21 R(reduced.)302.4
+337.21 Q F0(Possible Impr)362.71 356.46 Q(ovements)-.18 E F2 3.574
+(In this section we explore the full range of)324 372.96 R .343
+(improvements, from hacks to completely new \214le sys-)302.4 383.96 R .658
+(tem implementations.)302.4 394.96 R 2.257 -.8(We r)5.657 H .657
+(eject them all except clus-).8 F 1.41
+(tering; the discussion of the extent based \214le system)302.4 405.96 R
+(solution is of special interest.)302.4 416.96 Q F4(Raw disk)302.4 441.71 Q F2
+.551(Get rid of the \214le system altogether by using the)324 455.46 R .818
+(raw disk.)302.4 466.46 R .819(Some users, mostly those running database)5.818
+F .682(applications, actually do this.)302.4 477.46 R .681
+(There is no question of)5.681 F .486
+(\214le system overhead; the raw disk is a direct interface)302.4 488.46 R
+(plus a few permission checks.)302.4 499.46 Q 1.35
+(This solution is an act of desperation.)324 513.76 R 1.35(There is)6.35 F
+1.317(no \214le system, no \214le abstraction, no read ahead, no)302.4 524.76 R
+4.609(caching, in short, none of the features that are)302.4 535.76 R .409
+(expected of a \214le system.)302.4 546.76 R .409
+(The fact that users resort to)5.409 F .961
+(the raw disk is usually an indication that the \214le sys-)302.4 557.76 R
+(tem is too slow)302.4 568.76 Q(.)-.65 E F4(File system tuning)302.4 593.51 Q
+F2 -.35(Tu)324 607.26 S 1.465(ne the \214le system to take advantage of track)
+.35 F(buf)302.4 618.26 Q 3.17(fers. A)-.18 F .67(track buf)3.17 F .67
+(fer is a memory cache the size of)-.18 F 1.864
+(one track commonly found on newer disks, such as)302.4 629.26 R 1.585
+(SCSI disks, that have on board controllers.)302.4 640.26 R 1.585(When a)6.585
+F .977(read request for a block is sent to the disk, the entire)302.4 651.26 R
+.64 LW 410.4 669.159 302.4 669.159 DL F6(4)307.4 675.959 Q/F7 9/Times-Roman@0
+SF 1.446(Note that UFS does this dif)3.2 J 1.446
+(ferently than \214le systems in)-.162 F .012
+(other operating systems in that the gap is maintained by soft-)302.4 689.159 R
+3.563(ware. Other)302.4 699.159 R 1.313
+(systems format the disk to have this gap and)3.563 F(call it the disk)302.4
+709.159 Q/F8 9/Times-Italic@0 SF(interleave)2.25 E F7(.)A F0 312.06(4U)54
+744.96 S(SENIX \255 W)378.28 744.96 Q(inter '91 \255 Dallas, TX)-.18 E EP
+%%Page: 5 5
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Times-Bold@0 SF(McV)90 32.16 Q(oy & Kleiman)-.92 E
+(Extent\255like Performance fr)344.86 32.16 Q(om a)-.18 E/F1 8/Times-Bold@0 SF
+(UNIX)2.5 E F0(File System)2.5 E/F2 10/Times-Roman@0 SF 1.062
+(track is read into the buf)90 67.16 R(fer)-.18 E 6.062(.I)-.55 G 3.562(fs)
+215.054 67.16 S 1.062(uccessive blocks are)225.836 67.16 R .269
+(on the same track, they are serviced immediately from)90 78.16 R .91
+(the track buf)90 89.16 R(fer)-.18 E 5.91(.T)-.55 G .91
+(herefore, there is no need for rota-)167.25 89.16 R .86
+(tional delay between successive \214le blocks.)90 100.16 R .86(UFS can)5.86 F
+1.899(be tuned to attempt to place successive blocks con-)90 111.16 R 1.727
+(tiguously on the disk by setting)90 122.16 R/F3 10/Courier@0 SF(rotdelay)4.228
+E F2 1.728(to zero)4.228 F 1.422(\(see \214gure 5\).)90 133.16 R 1.421
+(This increases read performance sub-)6.422 F(stantially)90 144.16 Q 2.964(,s)
+-.65 G .464(ince an entire track')135.374 144.16 R 2.964(sw)-.55 G .465
+(orth of \214le data can)229.98 144.16 R(be read in one rotation.)90 155.16 Q
+194.4 205.76 18 DC .4 LW ST(disk)186.065 207.96 Q 194.4 205.76 39.6 DC ST
+166.392 177.752 181.656 193.016 DL 154.8 205.76 176.4 205.76 DL 194.4 166.16
+194.4 187.76 DL 222.408 177.752 207.144 193.016 DL 194.4 245.36 194.4 223.76 DL
+222.408 233.768 207.144 218.504 DL 166.392 233.768 181.656 218.504 DL 234
+205.76 212.4 205.76 DL(0)203.42 182.76 Q(1)219.26 198.6 Q(2)219.26 220.2 Q(3)
+203.42 236.04 Q(4)181.82 236.04 Q(5)165.98 220.2 Q(6)165.98 198.6 Q(7)181.82
+182.76 Q F0(Figur)130.135 261.86 Q 2.5(e5)-.18 G F2 2.5(:N)165.785 261.86 S
+(on\255interleaved blocks.)178.285 261.86 Q .047
+(At \214rst glance this looks like a win.)111.6 276.16 R .047(If we had no)
+5.047 F 1.205(rotational delays then a track would contain twice as)90 287.16 R
+1.523(much relevant data and the ef)90 298.16 R 1.523(fective disk bandwidth)
+-.18 F .314(would be twice as great.)90 309.16 R(However)5.314 E 2.815(,n)-.4 G
+.315(ot all drives have)240.055 309.16 R .439(track buf)90 320.16 R 2.939
+(fers. Drives)-.18 F .439(without track buf)2.939 F .438(fers would suf-)-.18 F
+2.627(fer substantial performance penalties on both reads)90 331.16 R 1.994
+(and writes.)90 342.16 R 1.993(Still, many of the drives sold today do)6.994 F
+.567(have track buf)90 353.16 R .567(fers, so why not take the easy way out?)
+-.18 F 1.842(The answer is write performance; it suf)90 364.16 R 1.841
+(fers horribly)-.18 F .433(when the \214le system has no rotational delay)90
+375.16 R 5.434(.T)-.65 G .434(he rea-)281.686 375.16 R 3.204
+(son for this is that the track buf)90 386.16 R 3.204(fer acts as write)-.18 F
+3.601(through cache, each write goes through the track)90 397.16 R(buf)90
+408.16 Q .525(fer to the disk)-.18 F/F4 8/Times-Italic@0 SF(5)-3.2 I F2 5.525
+(.S)3.2 K .525(ince the writes go directly to the)177.58 408.16 R .478
+(disk, we need the rotational delay between each block)90 419.16 R 1.843
+(or each write will wait a full rotation before begin-)90 430.16 R 4.05
+(ning. Given)90 441.16 R 1.55(that writes will degrade and only some)4.05 F
+(reads will improve, we rejected this approach.)90 452.16 Q/F5 10
+/Times-Italic@0 SF(Driver clustering)90 476.91 Q F2 1.024
+(First tune UFS to allocate sequential logical \214le)111.6 490.66 R 2.444
+(blocks contiguously by setting)90 501.66 R F3(rotdelay)4.943 E F2 2.443
+(to zero.)4.943 F .929(Then have the disk driver combine \(cluster\) any con-)
+90 512.66 R 1.885(tiguous requests in its queue into one lar)90 523.66 R 1.885
+(ge request.)-.18 F 2.483(This is relatively simple to implement, since many)90
+534.66 R 2.016(SunOS disk drivers call a routine,)90 545.66 R F3(disksort)4.515
+E F2 4.515(,t)C(hat)297.38 545.66 Q 1.617
+(orders the disk queue for optimal seek performance.)90 556.66 R .762
+(These drivers call)90 567.66 R F3(disksort)3.261 E F2 .761
+(each time a new block)3.261 F .273(request is received.)90 578.66 R F3
+(disksort)5.273 E F2 .274(could coalesce multi-)2.773 F
+(ple adjacent blocks into one I/O request.)90 589.66 Q .379
+(One disadvantage of this approach is that the \214le)111.6 603.96 R .143
+(system code must be traversed for each block.)90 614.96 R 1.744 -.8(We f)5.144
+H(elt).8 E 4.231(this to be excessively expensive in CPU cycles.)90 625.96 R
+1.731(Another problem is that driver clustering helps only)90 636.96 R 3.52
+(writes. The)90 647.96 R 1.02(reason for this is that there can be many)3.52 F
+.64 LW 198 669.159 90 669.159 DL F4(5)95 675.959 Q/F6 9/Times-Roman@0 SF .762
+(If the block went into the buf)3.2 J(fer)-.162 E 3.012(,b)-.36 G .762
+(ut not on the disk, the)227.787 679.159 R .126
+(system and/or user may believe that the data is safely on sta-)90 689.159 R
+2.289(ble storage.)90 699.159 R 2.289
+(If the system crashes the data is lost, even)6.789 F
+(though a promise was made that the data was safe.)90 709.159 Q F2 1.257
+(related writes in the disk queue at once, since writes)338.4 67.16 R .373
+(are asynchronous in nature.)338.4 78.16 R .372(Reads, on the other hand,)5.373
+F .631(are synchronous, so there can be at most two, the pri-)338.4 89.16 R
+.882(mary block and the read ahead block, in the queue at)338.4 100.16 R 8.34
+(once. Finally)338.4 111.16 R 8.34(,n)-.65 G 5.84(ot all drivers call)414.15
+111.16 R F3(disksort)8.34 E F2(.)A .355
+(Instead, those drivers depend on intelligent controllers)338.4 122.16 R
+(to do the ordering of requests.)338.4 133.16 Q F5(Extent based \214le system)
+338.4 157.91 Q F2 2.356(Replace UFS with a new \214le system type, an)360
+171.66 R .977(extent based \214le system.)338.4 182.66 R .976
+(This is a popular answer to)5.977 F 1.551(\214le system performance issues.)
+338.4 193.66 R 1.551(The basic idea is to)6.551 F 4.829
+(allocate \214le data in lar)338.4 204.66 R 4.828(ge, physically contiguous)
+-.18 F .156(chunks, called extents.)338.4 215.66 R .156
+(Most I/O is done in units of an)5.156 F 4.393(extent. This)338.4 226.66 R
+1.893(improves performance in both I/O rate)4.393 F 2.139
+(and CPU utilization, since the I/O is done contigu-)338.4 237.66 R(ously)338.4
+248.66 Q 2.569(,a)-.65 G .069(nd \214le system CPU overhead is amortized over)
+368.929 248.66 R(lar)338.4 259.66 Q .563(ger I/Os.)-.18 F -.7(Ty)5.563 G
+(pically).7 E 3.063(,t)-.65 G .563(he user can control the size of)435.209
+259.66 R 2.111(these extents on a per)338.4 270.66 R 2.111(-\214le basis.)-.2 F
+2.111(In most cases the)7.111 F .846
+(on\255disk \214le system represents the mapping of logical)338.4 281.66 R
+1.892(\214le blocks to physical blocks as a tuple of <logical)338.4 292.66 R
+2.926(block number)338.4 303.66 R 5.426(,p)-.4 G 2.927(hysical block number)
+409.122 303.66 R 5.427(,l)-.4 G 5.427(ength>. In)511.383 303.66 R 2.63
+(addition, the on\255disk inode is usually expanded to)338.4 314.66 R
+(maintain the user)338.4 325.66 Q 1.1 -.55('s r).37 H
+(equested extent size\(s\).).55 E .473
+(The disadvantage of exposing extents to the user)360 339.96 R .801
+(is that it is unlikely that a user will be able to choose)338.4 350.96 R .169
+(the `)338.4 361.96 R(`right')-.74 E 2.669('e)-.74 G .169(xtent size.)391.128
+361.96 R .169(Even if a good extent size can)5.169 F 1.319
+(be determined for a particular \214le, the size will vary)338.4 372.96 R 6.69
+(between machines with dif)338.4 383.96 R 6.69(ferent con\214gurations,)-.18 F
+1.934(between \214le systems on the same machine, or even)338.4 394.96 R 1.798
+(between dif)338.4 405.96 R 1.799(ferent locations on the same \214le system.)
+-.18 F 2.173(For example, consider a variable geometry drive \(a)338.4 416.96 R
+.519(drive that has more blocks on the outer tracks than on)338.4 427.96 R .137
+(the inner tracks\).)338.4 438.96 R .137(Such a drive may have dif)5.137 F .136
+(ferent val-)-.18 F 1.47(ues for the optimal extent size at dif)338.4 449.96 R
+1.47(ferent locations.)-.18 F 1.413
+(The same sort of problem exists when considering a)338.4 460.96 R .554
+(single drive versus a disk array [Patterson].)338.4 471.96 R -.35(Tr)5.554 G
+.554(ying to).35 F 1.065(write portable code that knows about extents is close)
+338.4 482.96 R(to impossible.)338.4 493.96 Q .787
+(Exposing this sort of information to the applica-)360 508.26 R 3.439
+(tion is rarely helpful and is frequently confusing.)338.4 519.26 R 2.026
+(Users rarely want to manage extents.)338.4 530.26 R(Usually)7.026 E 4.526(,t)
+-.65 G(hey)543.56 530.26 Q .79(really want some sort of performance promise.)
+338.4 541.26 R .79(If the)5.79 F 2.5(\214le system performed satisfactorily)
+338.4 552.26 R 5(,t)-.65 G 2.5(he user would)496.9 552.26 R .819
+(never consider telling the \214le system what to do.)338.4 563.26 R -.8(We)
+5.818 G 1.04(believe that the \214le system is capable of the required)338.4
+574.26 R(performance with no assistance from the user)338.4 585.26 Q(.)-.55 E
+1.426(Another disadvantage of this approach is that a)360 599.56 R 1.879
+(change in on\255disk \214le system format would require)338.4 610.56 R 3.951
+(changes to many system utilities, such as dump,)338.4 621.56 R
+(restore, and fsck.)338.4 632.56 Q F5(File system clustering)338.4 657.31 Q F2
+1.501(Modify UFS to combine blocks adjacent to the)360 671.06 R 1.298
+(requested blocks into a lar)338.4 682.06 R 1.297(ger I/O request.)-.18 F 1.297
+(This pro-)6.297 F 4.249(duces most, if not all, of the advantages of an)338.4
+693.06 R .663(extent\255based \214le system without requiring changes to)338.4
+704.06 R(the on\255disk format of UFS.)338.4 715.06 Q F0(USENIX \255 W)90
+744.96 Q(inter '91 \255 Dallas, TX)-.18 E F1(5)554 744.96 Q EP
+%%Page: 6 6
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Times-Bold@0 SF(Extent\255like Performance fr)54 32.16 Q(om a)-.18 E/F1
+8/Times-Bold@0 SF(UNIX)2.5 E F0(File System)2.5 E(McV)441.82 32.16 Q
+(oy & Kleiman)-.92 E(Clustering Implementation in UFS)89.77 67.16 Q/F2 10
+/Times-Roman@0 SF 1.428(This section presents the implementation of the)75.6
+83.66 R 1.236(solution we chose, clustering in the \214le system.)54 94.66 R
+(The)6.236 E 1.295(goal of our solution is to realize the full potential of)54
+105.66 R(the disk but to incur less CPU cost per byte doing so.)54 116.66 Q
+2.842 -.7(To r)75.6 130.96 T 1.441(each our goal we made two basic changes:).7
+F .715(we tuned the \214le system to allocate \214les contiguously)54 141.96 R
+1.066(and we changed the \214le system to transfer sequential)54 152.96 R .683
+(I/O in units of clusters.)54 163.96 R(A)5.683 E/F3 10/Times-Italic@0 SF
+(cluster)3.183 E F2 .683(is simply a number)3.183 F .486
+(of blocks, usually about 56KB worth)54 174.96 R/F4 8/Times-Italic@0 SF(6)-3.2
+I F2 5.486(.T)3.2 K .486(his approach)222.294 174.96 R 2.332
+(solves both of the problems in the old system: the)54 185.96 R 5.26
+(rotational delays are removed, which potentially)54 196.96 R 1.607
+(allows a single \214le to be read or written at the disk)54 207.96 R .949
+(speed, and clusters are used in place of blocks which)54 218.96 R .239
+(causes the \214le system code \(and the driver code below)54 229.96 R 1.464
+(it\) to be traversed far less frequently than in the old)54 240.96 R 2.5
+(system. The)54 251.96 R(details of our implementation follow)2.5 E(.)-.65 E F0
+(Allocator details)54 276.71 Q F2 2.936(There were no changes to the allocator)
+75.6 290.46 R 7.935(.T)-.55 G(he)264.16 290.46 Q 1.76
+(UFS allocator has always been able to allocate \214les)54 301.46 R
+(contiguously)54 312.46 Q 5.172(.T)-.65 G .171
+(his is almost true; in reality the alloca-)118.802 312.46 R(tor)54 323.46 Q F3
+(tries)2.566 E F2 .066(to allocate \214les as requested, but it may not be)
+2.566 F .042(able to do so if the disk is fragmented.)54 334.46 R .041
+(Since our work)5.042 F .687
+(depends heavily on contiguous allocation, it is impor)54 345.46 R(-)-.2 E
+2.406(tant to have con\214dence in the allocator)54 356.46 R 3.506 -.55('s a)
+.37 H 2.406(bility to).55 F(allocate contiguously)54 367.46 Q(.)-.65 E .167
+(Most extent based \214le systems have the ability to)75.6 381.76 R 1.283
+(preallocate extents to insure maximum transfer rates.)54 392.76 R 1.861 -.8
+(We h)54 403.76 T .261(ad originally considered preallocation as well but).8 F
+1.238(experience showed that this was lar)54 414.76 R 1.238(gely unnecessary)
+-.18 F(.)-.65 E 1.71 -.8(We t)54 425.76 T .11
+(ried several tests, ranging from \214lling up an entire).8 F 1.302
+(partition with one \214le to \214lling up the last 15% of a)54 436.76 R 1.43
+(heavily fragmented)54 447.76 R/F5 10/Courier@0 SF(/home)3.93 E F2 1.43
+(\(users' home directories\))3.93 F 4.63(partition. In)54 458.76 R 2.13
+(the best case, the average extent)4.63 F F4(7)-3.2 I F2(size)4.63 3.2 M 2.073
+(was 1.5MB in a 13MB \214le.)54 469.76 R 2.073(In the worst case, the)7.073 F
+1.993(average extent size was 62KB in a 16MB \214le.)54 480.76 R -.8(We)6.993 G
+.919(expected the allocator to do well when there were no)54 491.76 R .06
+(other competing \214les, but were worried about the frag-)54 502.76 R 1.411
+(mented \214le system case.)54 513.76 R 1.411(The results showed us that)6.411
+F 1.594(the allocator thinks ahead enough that it has a good)54 524.76 R .918
+(chance of being able to allocate blocks in the desired)54 535.76 R 2.852
+(location. The)54 546.76 R .352(reason that the allocator is able to do so)
+2.852 F 1.019(well is that it keeps a percentage of the disk \(usually)54
+557.76 R .295(10%\) free at all times.)54 568.76 R .295
+(The free space is not in a \214xed)5.295 F 1.164
+(location; the allocator may use any free block at any)54 579.76 R 1.244
+(time as long as it keeps a certain percentage free.)54 590.76 R(It)6.244 E
+4.149(uses this \215exibility to do better allocation, good)54 601.76 R 1.882
+(enough that we decided not to `)54 612.76 R(`\214x')-.74 E 4.382('t)-.74 G
+1.882(he system by)217.616 612.76 R(adding preallocation code.)54 623.76 Q .64
+LW 162 659.159 54 659.159 DL F4(6)59 665.959 Q/F6 9/Times-Roman@0 SF .264
+(56KB is used because there are still drivers out there with)3.2 J
+(16 bit limitations.)54 679.159 Q F4(7)59 685.959 Q F6 .013
+(Extent is used here to indicate a span of contiguous blocks)3.2 J .266
+(followed by a gap \(unrelated block\).)54 699.159 R .266
+(An extent may contain)4.766 F(any number of clusters.)54 709.159 Q F0
+(Sizing clusters)302.4 67.16 Q F2 1.615 -.8(We u)324 80.91 T(se).8 E F5
+(maxcontig)2.515 E F2 .016(to indicate the desired clus-)2.516 F .103(ter size)
+302.4 91.91 R F4(8)-3.2 I F2 5.103(.A)3.2 K .103
+(lthough we ask the allocator to create clus-)349.926 91.91 R .045
+(ters of size)302.4 102.91 R F5(maxcontig)2.545 E F2 .045
+(blocks, the actual cluster size)2.545 F .935(may be less than that.)302.4
+113.91 R .935(For example, we may want to)5.935 F .685
+(transfer a 40KB cluster but the portion of the \214le that)302.4 124.91 R
+2.045(we want may be in two 20KB extents on the disk.)302.4 135.91 R(Somehow)
+302.4 146.91 Q 3.393(,t)-.65 G .892
+(he \214le system needs to be told that 20KB)350.423 146.91 R
+(is the best that can be done at the moment.)302.4 157.91 Q(The)324 172.21 Q F5
+(bmap)2.606 E F2 .107(routine is able to give us this informa-)2.606 F .898
+(tion since its job is to know about the location of the)302.4 183.21 R .839
+(\214le on disk.)302.4 194.21 R F5(bmap)5.839 E F2 .839
+(used to take a logical block num-)3.339 F .61
+(ber and return a physical block number)302.4 205.21 R 5.61(.W)-.55 G 3.11(em)
+478.89 205.21 S(odi\214ed)494.22 205.21 Q .244
+(it to return a length as well as the physical block num-)302.4 216.21 R(ber)
+302.4 227.21 Q 5.073(.T)-.55 G .073
+(he portion of the \214le starting at the logical block)328.303 227.21 R 4.382
+(given to)302.4 238.21 R F5(bmap)6.882 E F2 4.383
+(is located at the physical block)6.882 F .408
+(returned and continues for at least the length returned.)302.4 249.21 R 2.111
+(The length returned is at most)302.4 260.21 R F5(maxcontig)4.612 E F2(blocks)
+4.612 E 1.76(long and is used as the ef)302.4 271.21 R 1.76
+(fective cluster size by the)-.18 F(caller \()302.4 282.21 Q F5(ufs_getpage)A
+F2(or)2.5 E F5(ufs_putpage)2.5 E F2(\).)A F0(Read clustering implementation)
+302.4 306.96 Q F2 4.207(The implementation of read clustering is in)324 320.71
+R F5(ufs_getpage)302.4 331.71 Q F2 3.454(,n)C 3.454(oc)379.354 331.71 S .954
+(hanges were required anywhere)392.248 331.71 R 2.281
+(else \(but see the section on page thrashing below\).)302.4 342.71 R(The)302.4
+353.71 Q F5(ufs_getpage)4.12 E F2 1.62(code still implements the same)4.12 F
+1.856(ideas: do a transfer)302.4 364.71 R 4.357(,p)-.4 G 1.857
+(redict the location of the next)395.235 364.71 R(transfer)302.4 375.71 Q 2.877
+(,a)-.4 G .377(nd if the prediction comes true start the read)342.357 375.71 R
+3.058(ahead. The)302.4 386.71 R .558(changes in)3.058 F F5(ufs_getpage)3.059 E
+F2 .559(all stem from)3.059 F .352
+(the switch to clusters from blocks: the rest of the code)302.4 397.71 R 1.659
+(did not need to be changed.)302.4 408.71 R 1.659(The read ahead imple-)6.659 F
+.348(mentation, shown in \214gure 6, is a little dif)302.4 419.71 R .347
+(ferent, since)-.18 F 1.097(we don')302.4 430.71 R 3.597(td)-.18 G 3.597(oar)
+347.184 430.71 S 1.097(ead ahead on each page, just on each)367.148 430.71 R
+(cluster)302.4 441.71 Q(.)-.55 E 333.36 506.15 MT 0 -55.44 RL -30.96 0 RL 0
+55.44 RL CL .32 LW ST/F7 8/Times-Roman@0 SF(page 0)304.328 457.69 Q(sync)
+303.216 466.69 Q(0,1,2)313.88 475.69 Q(async)303.772 484.69 Q(3,4,5)313.88
+493.69 Q(nextrio 3)304.548 502.69 Q 364.32 506.15 MT 0 -55.44 RL -30.96 0 RL 0
+55.44 RL CL ST(page 1)336.288 457.69 Q 395.28 506.15 MT 0 -55.44 RL -30.96 0 RL
+0 55.44 RL CL ST(page 2)367.248 457.69 Q 426.24 506.15 MT 0 -55.44 RL -30.96 0
+RL 0 55.44 RL CL ST(page 3)398.208 457.69 Q(async)396.652 484.69 Q(6,7,8)406.76
+493.69 Q(nextrio 6)397.428 502.69 Q 457.2 506.15 MT 0 -55.44 RL -30.96 0 RL 0
+55.44 RL CL ST(page 4)429.168 457.69 Q 488.16 506.15 MT 0 -55.44 RL -30.96 0 RL
+0 55.44 RL CL ST(page 5)460.128 457.69 Q 519.12 506.15 MT 0 -55.44 RL -30.96 0
+RL 0 55.44 RL CL ST(page 6)491.088 457.69 Q(async)489.532 484.69 Q(9,10,1)
+494.788 493.69 Q(1)-.296 E(nextrio 9)490.308 502.69 Q 308.16 509.03 5.76
+-180.0000 90.0000 DA 343.08 514.79 308.16 514.79 DL 343.08 520.55 5.76 -0.0000
+-90.0000 DA 389.52 509.03 5.76 90.0000 0.0000 DA 354.6 514.79 389.52 514.79 DL
+354.6 520.55 5.76 -90.0000 180.0000 DA(1st cluster)332.508 527.35 Q 401.04
+509.03 5.76 -180.0000 90.0000 DA 435.96 514.79 401.04 514.79 DL 435.96 520.55
+5.76 -0.0000 -90.0000 DA 482.4 509.03 5.76 90.0000 0.0000 DA 447.48 514.79
+482.4 514.79 DL 447.48 520.55 5.76 -90.0000 180.0000 DA(2nd cluster)424.056
+527.35 Q 493.92 509.03 5.76 -180.0000 90.0000 DA 497.88 514.79 493.92 514.79 DL
+497.88 520.55 5.76 -0.0000 -90.0000 DA 509.4 514.79 519.12 514.79 DL 509.4
+520.55 5.76 -90.0000 180.0000 DA(...)500.64 527.35 Q F0(Figur)307.19 544.09 Q
+2.5(e6)-.18 G F2 2.5(:C)342.84 544.09 S(lustered reads when)354.79 544.09 Q F5
+(maxcontig = 3)2.5 E F2(.)A 1.183
+(As before, each box represents a page and con-)324 558.39 R 1.608
+(tains the actions that occur as a result of the call to)302.4 569.39 R F5
+(ufs_getpage)302.4 580.39 Q F2 2.065(for that page.)4.565 F 2.064
+(The \214rst box shows)7.064 F .436
+(the synchronous read of the \214rst cluster)302.4 591.39 R 2.937(,a)-.4 G .437
+(nd the asyn-)472.246 591.39 R 2.609(chronous read of the second cluster)302.4
+602.39 R 7.608(.I)-.55 G 5.108(tr)469.682 602.39 S(emembers)480.9 602.39 Q .231
+(where to start the next read ahead by setting the)302.4 613.39 R F5(nex-)2.731
+E(trio)302.4 624.39 Q F2 .902
+(inode \214eld to the current location plus the size)3.403 F 1.162
+(of the current cluster)302.4 635.39 R 6.162(.T)-.55 G 1.162
+(he next two calls do nothing)403.138 635.39 R .632(except return the page.)
+302.4 646.39 R .632(Even the call for page 3 \214nds)5.632 F .825
+(the data in memory because this data was prefetched.)302.4 657.39 R .247
+(But we notice that this is the start of a new cluster and)302.4 668.39 R .64
+LW 410.4 689.159 302.4 689.159 DL F4(8)307.4 695.959 Q F6(Previously)3.2 I
+2.402(,w)-.585 G(hen)360.467 699.159 Q/F8 9/Courier@0 SF(rotdelay)2.402 E F6
+.151(was zero,)2.402 F F8(maxcontig)2.401 E F6(had)2.401 E
+(no meaning, but now it always indicates cluster size.)302.4 709.159 Q F0
+312.06(6U)54 744.96 S(SENIX \255 W)378.28 744.96 Q(inter '91 \255 Dallas, TX)
+-.18 E EP
+%%Page: 7 7
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Times-Bold@0 SF(McV)90 32.16 Q(oy & Kleiman)-.92 E
+(Extent\255like Performance fr)344.86 32.16 Q(om a)-.18 E/F1 8/Times-Bold@0 SF
+(UNIX)2.5 E F0(File System)2.5 E/F2 10/Times-Roman@0 SF 1.559
+(we start up the prefetch of 6, 7, and 8.)90 67.16 R 1.56(The pattern)6.559 F
+4.246(repeats inde\214nitely)90 78.16 R 6.746(,e)-.65 G 4.246
+(very third fault will start a)183.662 78.16 R(prefetch three pages ahead.)90
+89.16 Q(Earlier)111.6 103.46 Q 3.427(,w)-.4 G 3.427(es)151.557 103.46 S .927
+(aid that, although the allocator tries)163.314 103.46 R .318
+(to place a \214le contiguously on disk, it may not be able)90 114.46 R 1.69
+(to do so because of fragmentation.)90 125.46 R 1.69(This means that)6.69 F .12
+(the cluster sizes sent back from)90 136.46 R/F3 10/Courier@0 SF(bmap)2.62 E F2
+.12(may vary at any)2.62 F 4.864(point. In)90 147.46 R 2.365
+(fact, an old \214le system will always send)4.864 F 1.289
+(back a cluster of one block because of the rotational)90 158.46 R 1.988
+(delays between each block.)90 169.46 R 3.389 -.7(To i)6.989 H 1.989
+(nsure that the read).7 F 1.035
+(ahead code works regardless of cluster size, the code)90 180.46 R .685
+(that sets up the next read bases its calculations on the)90 191.46 R
+(returned rather than desired cluster size.)90 202.46 Q F0 -.18(Wr)90 227.21 S
+(ite clustering implementation).18 E F2 1.985
+(The implementation of write clustering is con-)111.6 240.96 R 4.533(tained in)
+90 251.96 R F3(ufs_putpage)7.033 E F2 9.533(.W)C 7.033(eh)222.959 251.96 S
+4.534(andle writes by)239.432 251.96 R 1.811
+(assuming sequential I/O and pretending that the I/O)90 262.96 R 1.325
+(completed immediately \(in other words, do nothing\).)90 273.96 R .173
+(If the sequentiality assumption is found to be wrong at)90 284.96 R .603
+(the next call, we write the previous page out and then)90 295.96 R .978
+(start over with the current page.)90 306.96 R .977(If the assumption is)5.978
+F .546(correct, we keep stalling until a cluster is built up and)90 317.96 R
+.779(then write out the whole cluster)90 328.96 R 5.778(.T)-.55 G .778
+(he implementation)234.102 328.96 R 3.262
+(relies on the page cache to hold dirty pages that)90 339.96 R F3(ufs_putpage)
+90 350.96 Q F2 1.069(pretended to \215ush.)3.569 F 1.068(The sequence of)6.068
+F(events is shown in \214gure 7.)90 361.96 Q 126 393.56 MT 0 -21.6 RL -36 0 RL
+0 21.6 RL CL .32 LW ST/F4 8/Times-Roman@0 SF(page 0)97.448 379.52 Q(lie)104
+389.52 Q 162 393.56 MT 0 -21.6 RL -36 0 RL 0 21.6 RL CL ST(page 1)133.448
+379.52 Q(lie)140 389.52 Q 198 393.56 MT 0 -21.6 RL -36 0 RL 0 21.6 RL CL ST
+(page 2)169.448 379.52 Q(push 0,1,2)163.444 389.52 Q 234 393.56 MT 0 -21.6 RL
+-36 0 RL 0 21.6 RL CL ST(page 3)205.448 379.52 Q(lie)212 389.52 Q 270 393.56 MT
+0 -21.6 RL -36 0 RL 0 21.6 RL CL ST(page 4)241.448 379.52 Q(lie)248 389.52 Q
+306 393.56 MT 0 -21.6 RL -36 0 RL 0 21.6 RL CL ST(page 5)277.448 379.52 Q
+(push 3,4,5)271.444 389.52 Q 95.76 396.44 5.76 -180.0000 90.0000 DA 138.24
+402.2 95.76 402.2 DL 138.24 407.96 5.76 -0.0000 -90.0000 DA 192.24 396.44 5.76
+90.0000 0.0000 DA 149.76 402.2 192.24 402.2 DL 149.76 407.96 5.76 -90.0000
+180.0000 DA(1st cluster)127.668 414.04 Q 203.76 396.44 5.76 -180.0000 90.0000
+DA 246.24 402.2 203.76 402.2 DL 246.24 407.96 5.76 -0.0000 -90.0000 DA 300.24
+396.44 5.76 90.0000 0.0000 DA 257.76 402.2 300.24 402.2 DL 257.76 407.96 5.76
+-90.0000 180.0000 DA(2nd cluster)234.336 414.04 Q F0(Figur)93.81 429.78 Q 2.5
+(e7)-.18 G F2 5(:C)129.46 429.78 S(lustered writes with)143.91 429.78 Q F3
+(maxcontig = 3)2.5 E F2(.)A 4.196 -.7(To i)111.6 444.08 T 2.797
+(mplement write clustering, we added two).7 F 2.685(more inode \214elds:)90
+455.08 R F3(delayoff)5.185 E F2(and)5.185 E F3(delaylen)5.185 E F2 5.185(,a)C
+(s)305.71 455.08 Q 1.06(seen in \214gure 8.)90 466.08 R 1.06
+(These new \214elds indicate the of)6.06 F(fset)-.18 E 1.242
+(of the \214rst page that was delayed and the number of)90 477.08 R
+(pages delayed \(in bytes\), respectively)90 488.08 Q(.)-.65 E .4 LW 309.6
+497.98 90 497.98 DL F3(if \(delaylen < maxcontig &&)97.2 514.48 Q
+(delayoff + delaylen == off\) {)121.2 525.48 Q(delaylen += PAGESIZE)145.2
+536.48 Q(return)145.2 547.48 Q(})97.2 558.48 Q(find all pages from delayoff)
+97.2 569.48 Q(to delayoff + delaylen)121.2 580.48 Q(while \(more pages\) {)97.2
+591.48 Q(bmap\(\))145.2 602.48 Q(start I/O for this cluster)145.2 613.48 Q
+(subtract that many pages)145.2 624.48 Q(})97.2 635.48 Q 309.6 646.48 90 646.48
+DL F0(Figur)125.45 662.98 Q 2.5(e8)-.18 G F2 5(:C)161.1 662.98 S
+(lustered write algorithm.)175.55 662.98 Q 1.898 -.8(We u)90 677.28 T .299
+(se these variables to detect sequential vs. random).8 F 2.63(write patterns.)
+90 688.28 R 2.63(If we do detect random writes, we)7.63 F 3.606
+(write out the old pages between)90 699.28 R F3(delayoff)6.106 E F2(and)6.106 E
+F3 4.514(delayoff + delaylen)90 710.28 R F2 4.514(before restarting the)7.014 F
+1.16(algorithm with the current page; this is not shown in)338.4 67.16 R
+(\214gure 8.)338.4 78.16 Q 2.097
+(The fact that the allocator may not be able to)360 92.46 R .3
+(allocate contiguously is re\215ected in the addition of the)338.4 103.46 R
+1.239(while loop.)338.4 114.46 R 1.239(Note that this means we do not know if)
+6.239 F .913(the \214le is allocated contiguously until we try to write)338.4
+125.46 R(out the cluster)338.4 136.46 Q(.)-.55 E F0(Unanticipated Pr)396.485
+155.71 Q(oblems)-.18 E F2 5.063(The implementation of clustering uncovered)360
+172.21 R 3.083(other problems in the system which are described)338.4 183.21 R
+2.633(here. Many)338.4 194.21 R .133
+(of these can be traced to the interaction of)2.633 F
+(the \214le and VM subsystems.)338.4 205.21 Q F0(Page thrashing.)338.4 229.96 Q
+F2 4.228 -.8(We t)360 243.71 T 2.629
+(hought that the \214le system was the only).8 F 2.206
+(major bottleneck in I/O throughput, but in \214xing it)338.4 254.71 R .652
+(another problem area appeared: the paging part of the)338.4 265.71 R 1.099
+(VM system.)338.4 276.71 R 1.098(After reducing the \214le system overhead)
+6.099 F 1.01(by clustering, we expected to be able to see through-)338.4 287.71
+R 4.192(put rates equivalent to the disk bandwidth.)338.4 298.71 R(The)9.191 E
+.025(throughput was lower than expected and we found that)338.4 309.71 R 1.135
+(the VM system was the culprit.)338.4 320.71 R 1.135(Pages were entering)6.135
+F(the system at a higher rate than they could be freed.)338.4 331.71 Q 1.974
+(The uni\214ed VM system has only two ways of)360 346.01 R 1.235
+(freeing pages: removing the backing store \(unlinking)338.4 357.01 R .51
+(the \214le\) or running the pageout daemon.)338.4 368.01 R .51(The pageout)
+5.51 F 2.604(daemon implements \(or tries to implement\) a least)338.4 379.01 R
+1.053(recently used page replacement algorithm.)338.4 390.01 R 1.054(The algo-)
+6.054 F .018(rithm is the basic two handed clock and is explained in)338.4
+401.01 R([Lef)338.4 412.01 Q 3.455(\215er]. The)-.18 F .955
+(\214rst hand of the clock clears reference)3.455 F .023
+(bits and the second hand frees the page if the reference)338.4 423.01 R 2.516
+(bit is still clear)338.4 434.01 R 7.517(.T)-.55 G 2.517
+(he hands move, in unison, only)420.695 434.01 R 1.102
+(when the amount of free memory drops below a low)338.4 445.01 R(water mark.)
+338.4 456.01 Q .301(Considering lar)360 470.31 R .301
+(ge sequential I/O, we can see that)-.18 F 1.102
+(the pages just brought in are recently touched and as)338.4 481.31 R 3.124
+(such will not be candidates for page replacement.)338.4 492.31 R 1.423
+(This has the side ef)338.4 503.31 R 1.423(fect of using all of memory as a)
+-.18 F(buf)338.4 514.31 Q 2.016(fer cache for I/O pages.)-.18 F 2.017
+(For limited I/O, this is)7.017 F 2.318(generally a good policy)338.4 525.31 R
+4.818(,b)-.65 G 2.317(ut for lar)451.172 525.31 R 2.317(ge \(greater than)-.18
+F 1.85(memory size\) I/O this is a poor policy since it will)338.4 536.31 R
+2.051(replace all, potentially useful, pages with I/O pages)338.4 547.31 R .36
+(that are unlikely to be reused.)338.4 558.31 R .36(The VM system imple-)5.36 F
+1.499(ments a least recently used \(LRU\) page replacement)338.4 569.31 R 1.083
+(algorithm but for lar)338.4 580.31 R 1.084(ge I/O it should implement most)
+-.18 F(recently used \(MRU\).)338.4 591.31 Q .864
+(Suppose we were to move an in\214nite amount of)360 605.61 R .131
+(data through the system.)338.4 616.61 R .131(If we have other users on the)
+5.131 F 1.398(system, we don')338.4 627.61 R 3.898(tw)-.18 G 1.398
+(ant to disturb their pages or they)420.184 627.61 R(won')338.4 638.61 Q 3.796
+(tb)-.18 G 3.796(ea)370.346 638.61 S 1.296(ble to do any work.)383.022 638.61 R
+1.297(In this case, the best)6.296 F 2.314
+(thing to do is to use and reuse a small number of)338.4 649.61 R .913
+(pages, say the current cluster)338.4 660.61 R 2.014 -.55('s w).37 H 3.414
+(orth. Unfortunately).55 F(,)-.65 E 1.078
+(this is not always the best thing to do or it would be)338.4 671.61 R .853
+(the default in the system.)338.4 682.61 R .853(If we used MRU for every)5.853
+F .217(\214le, we would ef)338.4 693.61 R .217(fectively turn of)-.18 F 2.717
+(fc)-.18 G .216(aching, which is as)481.252 693.61 R
+(bad as the original problem of destroying the cache.)338.4 704.61 Q F0
+(USENIX \255 W)90 744.96 Q(inter '91 \255 Dallas, TX)-.18 E F1(7)554 744.96 Q
+EP
+%%Page: 8 8
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Times-Bold@0 SF(Extent\255like Performance fr)54 32.16 Q(om a)-.18 E/F1
+8/Times-Bold@0 SF(UNIX)2.5 E F0(File System)2.5 E(McV)441.82 32.16 Q
+(oy & Kleiman)-.92 E/F2 10/Times-Roman@0 SF 2.055 -.8(We n)75.6 67.16 T .456
+(eeded a compromise that would allow lar).8 F(ge)-.18 E .125
+(I/O to go through the system with little impact but still)54 78.16 R 2.445
+(leave in place the caching ef)54 89.16 R 2.445(fects for smaller \214les.)-.18
+F 1.099(The compromise is inelegant and eventually the pag-)54 100.16 R 3.714
+(ing subsystem will be improved to address these)54 111.16 R .102
+(issues properly)54 122.16 R 5.102(.F)-.65 G .102(or now)126.884 122.16 R 2.602
+(,w)-.65 G 2.602(et)166.708 122.16 S .102(urn on)176.53 122.16 R/F3 10
+/Times-Italic@0 SF(fr)2.602 E .102(ee behind)-.37 F F2 .102(if the)2.602 F .917
+(\214le is in sequential read mode, at a lar)54 133.16 R .917(ge enough of)-.18
+F(f-)-.18 E 1.27(set, and free memory is close to the low water mark)54 144.16
+R(that turns on the pager)54 155.16 Q(.)-.55 E 1.085
+(Free behind is triggered in)75.6 169.46 R/F4 10/Courier@0 SF(rdwr)3.585 E F2
+1.085(when the ker)3.585 F(-)-.2 E 2.108(nel unmaps the page.)54 180.46 R 2.107
+(If the free behind conditions)7.108 F 1.01
+(speci\214ed above are met, then the unmap will cause a)54 191.46 R 1.427
+(call to)54 202.46 R F4(ufs_putpage)3.927 E F2 1.426(that will free the page.)
+3.926 F(Free)6.426 E .36
+(behind has the desired attribute that the process that is)54 213.46 R 1.758
+(causing the problem is the process \214nding the solu-)54 224.46 R 2.923
+(tion. The)54 235.46 R .423(pageout daemon no longer wakes up to free)2.923 F
+.329(pages when the system is heavily I/O bound, since the)54 246.46 R .86
+(I/O bound processes are doing it themselves.)54 257.46 R(Having)5.86 E 2.696
+(ap)54 268.46 S .195(rocess do the free behind in the I/O code path elim-)
+66.136 268.46 R 1.416(inates the overhead associated with switching to and)54
+279.46 R(running the pageout daemon.)54 290.46 Q F0 -.18(Wr)54 315.21 S
+(ite limits or fairness).18 E F2 1.42(There is a fairness problem with)75.6
+328.96 R F4(write)3.92 E F2 1.42(in the)3.92 F 1.717(VM system.)54 339.96 R
+4.218(As)6.717 G 1.718(ingle process can lock down all of)126.652 339.96 R
+1.367(memory by writing a lar)54 350.96 R 1.366
+(ge \214le \(remember that write)-.18 F 1.62
+(I/O is asynchronous; the kernel copies it and allows)54 361.96 R .021
+(the user process to continue\).)54 372.96 R .021(In old)5.021 F/F5 8
+/Times-Roman@0 SF(UNIX)2.521 E F2 .02(systems, the)2.521 F(buf)54 383.96 Q .504
+(fer cache imposed a natural limit on the amount of)-.18 F 3.565
+(memory that could be consumed for I/O.)54 394.96 R 3.565(In the)8.565 F 1.373
+(SunOS VM implementation, where all of memory is)54 405.96 R 1.492
+(used as a cache, there is nothing to prevent a single)54 416.96 R 2.885
+(process from dirtying every page.)54 427.96 R 2.886(For example, a)7.886 F
+(lar)54 438.96 Q .136(ge process dumping core can cause the system to be)-.18 F
+2.093(temporarily unusable, since all the pages are essen-)54 449.96 R 2.582
+(tially locked \(they are dirty and in the disk queue)54 460.96 R
+(which is the same as being locked down\).)54 471.96 Q 3.076
+(This is a basic fairness problem \255 the asyn-)75.6 486.26 R 1.164
+(chronous nature of writes may be used to the advan-)54 497.26 R 1.382
+(tage of one process, but it may be at the expense of)54 508.26 R
+(other processes in the system.)54 519.26 Q 3.636
+(Our solution to this problem is to limit the)75.6 533.56 R .387
+(amount of data that can be in the write queue on a per)54 544.56 R .93
+(\214le basis.)54 555.56 R 2.53 -.8(We d)5.93 H 3.43(ot).8 G .93
+(his by adding what is essentially a)131.36 555.56 R .228
+(counting semaphore in the inode.)54 566.56 R .229(Each process decre-)5.229 F
+1.177(ments the semaphore when writing and increments it)54 577.56 R 2.177
+(when the write is complete.)54 588.56 R 2.178(If the semaphore falls)7.178 F
+1.748(below zero, the writing process is put to sleep until)54 599.56 R
+(one of the other writes completes.)54 610.56 Q .307
+(The initial value of the semaphore has to be cho-)75.6 624.86 R 1.735
+(sen carefully)54 635.86 R 6.735(.I)-.65 G 4.235(fi)119.02 635.86 S 4.235(ti)
+129.365 635.86 S 4.235(st)139.16 635.86 S 1.735(oo lar)150.065 635.86 R 1.734
+(ge we return to the old)-.18 F 3.228
+(problem; if it is too small, we will degrade both)54 646.86 R 1.986
+(sequential and random performance.)54 657.86 R 1.986(The sequential)6.986 F
+.67(problem is exposed when we consider the I/O path as)54 668.86 R 3.274(ap)54
+679.86 S 3.274(ipeline. W)66.714 679.86 R 3.274(en)-.8 G .774
+(eed to feed the pipe at a fast enough)123.562 679.86 R 2.005
+(rate that we never have any bubbles.)54 690.86 R 2.005(For example,)7.005 F
+1.685(suppose we allowed only one write at a time in the)54 701.86 R 4.217
+(queue. The)54 712.86 R 1.718(\214rst write would go down to the driver)4.217 F
+1.748(and the second would block, waiting for the \214rst to)302.4 67.16 R
+3.161(complete. When)302.4 78.16 R .662
+(the \214rst completes, the second starts)3.161 F 2.21
+(down, but this is too late.)302.4 89.16 R 2.21(By the time the second)7.21 F
+2.768(request makes it out to the drive, there is a good)302.4 100.16 R .239
+(chance that the drive will have rotated past the desired)302.4 111.16 R
+(block.)302.4 122.16 Q .71(The pipeline problem can be solved by allowing)324
+136.46 R 2.053(two or three outstanding writes, but this is still not)302.4
+147.46 R .86(good enough.)302.4 158.46 R .86
+(There is another problem with random)5.86 F 2.733(access. Consider)302.4
+169.46 R 2.733(ap)2.733 G .232(rocess that seeks to the beginning)386.689
+169.46 R 1.027(of the disk, writes a block, seeks to the end, writes a)302.4
+180.46 R .157(block, back to the beginning, writes a block, and so on)302.4
+191.46 R .241(until N blocks have been written.)302.4 202.46 R .241
+(If we allow the disk)5.241 F .015(queue to be in\214nitely lar)302.4 213.46 R
+.014(ge, then)-.18 F F4(disksort)2.514 E F2 .014(will get a)2.514 F 1.409
+(chance to sort the requests such that the system will)302.4 224.46 R 1.656
+(seek to the beginning, write N/2 blocks, seek to the)302.4 235.46 R .536
+(end, and write N/2 blocks.)302.4 246.46 R .537(The ef)5.537 F .537
+(fective I/O rate will)-.18 F .851
+(be much higher in the case without a write limit than)302.4 257.46 R .421
+(the case with a write limit of one.)302.4 268.46 R .421(For this reason, we)
+5.421 F 1.02(allow a fairly lar)302.4 279.46 R 1.02
+(ge \(currently 240KB\) amount of I/O)-.18 F(per \214le in the disk queue.)
+302.4 290.46 Q .357(The limit is currently set on a global basis for all)324
+304.76 R 3.462(processes. This)302.4 315.76 R .962
+(is not as \215exible as it could be.)3.462 F(The)5.962 E 1.482
+(write limit may be better implemented as a resource)302.4 326.76 R
+(limit on a per process basis \(see)302.4 337.76 Q F4(getrlimit\(2\))2.5 E F2
+(\).)A F0(Performance Measur)351.895 357.01 Q(ements)-.18 E F2 4.056 -.8(We r)
+324 373.51 T 2.456(an several benchmarks, from pure I/O to).8 F 2.063
+(multi\255user time\255sharing, to test out our work.)302.4 384.51 R(The)7.063
+E 1.065(I/O benchmarks, as shown below)302.4 395.51 R 3.565(,s)-.65 G 1.065
+(howed substantial)448.995 395.51 R 5.925
+(improvements, but the time\255sharing benchmarks)302.4 406.51 R
+(improved only slightly)302.4 417.51 Q(.)-.65 E 9.367 -.8(We w)324 431.81 T
+7.767(ere a little disappointed with the).8 F 1.498
+(time\255sharing numbers until we examined the bench-)302.4 442.81 R .86
+(mark in detail.)302.4 453.81 R .86(The benchmark, MusBus, was spend-)5.86 F
+1.05(ing most of its time sleeping and the rest of the time)302.4 464.81 R
+5.159(running small programs such as)302.4 475.81 R F4(date\(1\))7.658 E F2
+(and)7.658 E F4(ls\(1\))302.4 486.81 Q F2 5.255(.T)C .255(he lar)346.265 486.81
+R .255(gest I/O transfer done by Musbus was)-.18 F 1.717
+(around 8KB which is the \214le system block size.)302.4 497.81 R(In)6.716 E
+3.436(other words, MusBus didn')302.4 508.81 R 5.937(tm)-.18 G 3.437
+(ove any substantial)438.466 508.81 R(amount of data.)302.4 519.81 Q .4 LW
+521.996 528.81 302.4 528.81 DL 14.426(cluster rot)326.539 537.31 R 30.126
+(UFS free)413.296 537.31 R(write)496.178 537.31 Q 14.706(size delay)332.094
+548.31 R 18.736(version behind)407.746 548.31 R(limit)497.003 548.31 Q 521.996
+551.81 302.4 551.81 DL 10.536(A1)307.668 560.31 S 16.366(20KB 0 SunOS)330.424
+560.31 R 14.371(4.1.1 Y)2.5 F 17.371(es Y)-1 F(es)-1 E 15.811(B8)307.943 571.31
+S 21.366(KB 4)335.424 571.31 R(SunOS 4.1)400.796 571.31 Q -1(Ye)464.757 571.31
+S 19.871(sY)1 G(es)505.398 571.31 Q 15.811(C8)307.943 582.31 S 21.366(KB 4)
+335.424 582.31 R(SunOS 4.1)400.796 582.31 Q 18.536(No Y)465.922 582.31 R(es)-1
+E 15.536(D8)307.668 593.31 S 21.366(KB 4)335.424 593.31 R(SunOS 4.1)400.796
+593.31 Q 19.701(No No)465.922 593.31 R 521.996 596.81 302.4 596.81 DL 521.996
+528.81 521.996 596.81 DL 302.4 528.81 302.4 596.81 DL F0(Figur)339.94 615.31 Q
+2.5(e9)-.18 G F2 2.5(:I)375.59 615.31 S(Obench run descriptions.)384.2 615.31 Q
+2.538 -.8(We u)324 629.61 T .937(se an internal program called).8 F F4(IObench)
+3.437 E F2(to)3.437 E 1.258(show transfer rates.)302.4 640.61 R 1.259
+(Figure 9 explains the con\214gura-)6.258 F 1.475
+(tion of each of four I/O benchmark runs.)302.4 651.61 R 1.474(The hard-)6.474
+F 1.163(ware con\214guration is the same in each run, an 8MB,)302.4 662.61 R
+2.337(20MHz Sparcstation 1, with one 400MB 3.5" IBM)302.4 673.61 R 1.128
+(SCSI drive.)302.4 684.61 R 2.729 -.8(We u)6.129 H 1.129
+(sed a kernel that has variables that).8 F .353
+(enable and disable the old and new code in an attempt)302.4 695.61 R 3.265
+(to get an apples to apples comparison.)302.4 706.61 R 3.265(The `)8.265 F(`A)
+-.74 E -.74('')-1.11 G F0 312.06(8U)54 744.96 S(SENIX \255 W)378.28 744.96 Q
+(inter '91 \255 Dallas, TX)-.18 E EP
+%%Page: 9 9
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Times-Bold@0 SF(McV)90 32.16 Q(oy & Kleiman)-.92 E
+(Extent\255like Performance fr)344.86 32.16 Q(om a)-.18 E/F1 8/Times-Bold@0 SF
+(UNIX)2.5 E F0(File System)2.5 E/F2 10/Times-Roman@0 SF 1.331
+(con\214guration is almost identical to that shipped with)90 67.16 R .625
+(SunOS 4.1.1; the dif)90 78.16 R .626(ference is that the \214le system has)
+-.18 F 2.175(been tuned to use 120KB clusters instead of 56KB)90 89.16 R 6.151
+(clusters. The)90 100.16 R 3.651(last con\214guration, `)6.151 F(`D,')-.74 E
+8.652('i)-.74 G 6.152(sac)268.416 100.16 S(lose)293.49 100.16 Q 2.561
+(approximation of a SunOS 4.1 installation; the \214le)90 111.16 R 1.1
+(system has been tuned to make 1 block clusters with)90 122.16 R .685
+(the standard 4ms rotational delay)90 133.16 R 5.685(.T)-.65 G .685(he `)
+239.145 133.16 R(`B')-.74 E 3.185('a)-.74 G .685(nd `)277.905 133.16 R(`C')-.74
+E(')-.74 E .463(con\214gurations are similar to `)90 144.16 R(`D')-.74 E 2.963
+('b)-.74 G .464(ut add some of the)233.865 144.16 R .623
+(paging and fairness heuristics described in the section)90 155.16 R
+(on unanticipated problems.)90 166.16 Q 3.303(In the results shown below)111.6
+180.46 R 5.803(,t)-.65 G 3.303(he columns are)242.454 180.46 R 1.597
+(headed by a three letter name indicating the type of)90 191.46 R 2.705
+(I/O. The)90 202.46 R .205(\214rst letter means)2.705 F F0(F)2.706 E F2 .206
+(ile system, the second let-)B .892(ter indicates)90 213.46 R F0(S)3.392 E F2
+.891(equential or)B F0(R)3.391 E F2 .891(andom, and the third let-)B 1.208
+(ter indicates)90 224.46 R F0(R)3.708 E F2(ead,)A F0(W)3.708 E F2 1.209
+(rite, or)B F0(U)3.709 E F2 3.709(pdate. The)B(dif)3.709 E(ference)-.18 E .187
+(between write and update is that in the update case the)90 235.46 R(\214le')90
+246.46 Q 2.5(sb)-.55 G(locks have already been allocated.)116.95 246.46 Q .4 LW
+309.59 255.46 90 255.46 DL 18.07(FSR FSU)127.795 263.96 R 16.41(FSW FRR FRU)
+203.405 263.96 R 309.59 267.46 90 267.46 DL 18.91(A1)99.455 275.96 S 16.41
+(610 1364)130.585 275.96 R 20.31(1359 383)203.965 275.96 R(452)285.135 275.96 Q
+24.185(B8)99.73 286.96 S 21.41(05 799)135.585 286.96 R 20.31(790 369)208.965
+286.96 R(431)285.135 286.96 Q 24.185(C7)99.73 297.96 S 21.41(49 783)135.585
+297.96 R 20.31(784 366)208.965 297.96 R(428)285.135 297.96 Q 23.91(D7)99.455
+308.96 S 21.41(49 722)135.585 308.96 R 20.31(718 370)208.965 308.96 R(545)
+285.135 308.96 Q 309.59 312.46 90 312.46 DL 309.59 255.46 309.59 312.46 DL 90
+255.46 90 312.46 DL F0(Figur)102.55 330.96 Q 2.5(e1)-.18 G(0)138.2 330.96 Q F2
+2.5(:I)C(Obench transfer rates in KB/second.)151.81 330.96 Q 1.249
+(Figure 10 shows the transfer rates, for the vari-)111.6 345.26 R 1.882
+(ous I/O types, for four dif)90 356.26 R 1.881(ferent software con\214gura-)
+-.18 F 4.592(tions. Since)90 367.26 R 2.093
+(the numbers are hardware speci\214c, we)4.593 F
+(show and discuss the ratios below)90 378.26 Q(.)-.65 E 309.6 387.26 90 387.26
+DL 15.39(FSR FSU FSW FRR FRU)134.055 395.76 R 309.6 399.26 90 399.26 DL 15.955
+(A/B 2.00)99.22 407.76 R 18.45(1.71 1.72)170.575 407.76 R 17.34(1.04 1.05)
+245.815 407.76 R 15.955(A/C 2.15)99.22 418.76 R 18.45(1.74 1.73)170.575 418.76
+R 17.34(1.05 1.06)245.815 418.76 R 15.68(A/D 2.15)98.945 429.76 R 18.45
+(1.89 1.89)170.575 429.76 R 17.34(1.04 0.83)245.815 429.76 R 309.6 433.26 90
+433.26 DL 309.6 387.26 309.6 433.26 DL 90 387.26 90 433.26 DL F0(Figur)121.02
+451.76 Q 2.5(e1)-.18 G(1)156.12 451.76 Q F2 2.5(:I)C
+(Obench transfer rate ratios.)169.73 451.76 Q .702(In \214gure 1)111.6 466.06 R
+.702(1, we can see that almost all I/O rates)-.37 F .922
+(improved, some slightly and some substantially)90 477.06 R 5.922(.P)-.65 G
+(re-)298.5 477.06 Q(dictably)90 488.06 Q 2.503(,t)-.65 G .002
+(he sequential I/O rates improved about a fac-)129.353 488.06 R 1.412
+(tor of two.)90 499.06 R 1.412(Reads are better than writes because the)6.412 F
+1.049(track buf)90 510.06 R 1.049(fer helps only reads.)-.18 F 2.649 -.8(We m)
+6.049 H 1.049(ade a tradeof).8 F 3.548(fi)-.18 G(n)304.6 510.06 Q .511
+(favor of reads in not adding rotational delays between)90 521.06 R 5.477
+(clusters. If)90 532.06 R 2.976(the delays are present, the writes will)5.477 F
+(improve slightly)90 543.06 Q 2.5(,b)-.65 G(ut the reads will degrade slightly)
+165.19 543.06 Q(.)-.65 E 3.47(The random update \(or write\) numbers went)111.6
+557.36 R 2.243(down when compared to the generic 4.1 UFS.)90 568.36 R -.8(We)
+7.242 G 1.051(made a tradeof)90 579.36 R 3.551(fb)-.18 G 1.052
+(etween performance and fairness in)163.223 579.36 R .639
+(favor of fairness, which is explained in the section on)90 590.36 R
+(unanticipated problems.)90 601.36 Q 309.6 610.36 90 610.36 DL 13.928
+(CPU Notes)95.476 618.86 R 309.6 622.36 90 622.36 DL 16.988(2.6s 4.1.1)95.476
+630.86 R(UFS, no rotdelays, 16MB mmap read)2.5 E 16.988(3.4s 4.1)95.476 641.86
+R(UFS, rotdelays, 16MB mmap read)2.5 E 309.6 645.36 90 645.36 DL 309.6 610.36
+309.6 645.36 DL 90 610.36 90 645.36 DL F0(Figur)125.305 663.86 Q 2.5(e1)-.18 G
+(2)160.955 663.86 Q F2 2.5(:S)C(ystem CPU comparison.)176.795 663.86 Q 5.39 -.8
+(We u)111.6 678.16 T 3.79(sed yet another internal benchmark for).8 F 2.128
+(comparing CPU time.)90 689.16 R 2.127(The benchmark is similar to)7.127 F .854
+(IObench, in fact it shows identical I/O rates, but uses)90 700.16 R(the)90
+711.16 Q/F3 10/Courier@0 SF(mmap)3.282 E F2 .781
+(interface to avoid the copying of data from)3.281 F 1.719
+(the kernel to the user)338.4 67.16 R 6.719(.T)-.55 G 1.719
+(he IObench CPU times are)443.924 67.16 R 1.761
+(dominated by the copy time and hence are approxi-)338.4 78.16 R .114
+(mately the same.)338.4 89.16 R .115(Since we want to show the overhead)5.114 F
+.202(of the new system versus the old, we used)338.4 100.16 R F3(mmap)2.702 E
+F2 5.202(.T)C(he)548.56 100.16 Q 1.184
+(cpu times in \214gure 12 show the seconds used by the)338.4 111.16 R 1.128
+(CPU to read a 16MB \214le.)338.4 122.16 R 1.128(The new UFS is approxi-)6.128
+F 1.955(mately 25% more ef)338.4 133.16 R 1.955
+(\214cient in terms of CPU cycles.)-.18 F 3.719 -.8(We b)338.4 144.16 T 2.119
+(elieve that we can do even better; we explain).8 F
+(how in the section on further work.)338.4 155.16 Q F0(Comparison to Related W)
+385.285 174.41 Q(ork)-.55 E F2(Peacock')360 190.91 Q 3.838(sS)-.55 G 1.338
+(ystem V clustering [Peacock] is the)409.388 190.91 R 2.686
+(most similar work we've found.)338.4 201.91 R 2.685(The reasoning of)7.686 F
+1.326(reducing per byte overhead by doing)338.4 212.91 R(lar)6.326 E 1.326
+(ger requests)-.18 F 5.117(is the same. Both)338.4 223.91 R 2.616
+(designs try to improve perfor)5.116 F(-)-.2 E .966
+(mance by turning sequential I/O requests)338.4 234.91 R 3.466(into lar)5.966 F
+(ger)-.18 E 3.249(sequential I/O)338.4 245.91 R 3.249(requests. W)3.249 F 3.249
+(eb)-.8 G .749(elieve that most)463.626 245.91 R .748(of the)5.748 F 2.237
+(following dif)338.4 256.91 R 2.237(ferences can be traced to starting with)
+-.18 F 3.613(one base)338.4 267.91 R 1.113(or the other)3.613 F 3.613(,U)-.4 G
+1.113(FS versus the System V \214le)441.595 267.91 R(system \(S5FS\).)338.4
+278.91 Q 5<8357>338.4 293.21 S 3.358(ed)355.54 293.21 S .858
+(epend on the FFS allocator to lay out the \214les)368.338 293.21 R
+(contiguously)346.9 304.21 Q 5.389(.O)-.65 G .388
+(riginally we had planned to preallo-)413.029 304.21 R 2.26
+(cate blocks, but we found that the allocator does)346.9 315.21 R .481
+(such a good job that there was little to be gained by)346.9 326.21 R 5.07
+(preallocation. The)346.9 337.21 R 2.57(same is not true of the S5FS)5.07 F
+(allocator)346.9 348.21 Q 6.113(.A)-.55 G 3.613(sP)397.173 348.21 S 1.112
+(eacock pointed out, it is based on a)410.236 348.21 R .804
+(free list that gets scrambled as the \214le system ages.)346.9 359.21 R .493
+(Peacock was forced to rewrite the allocator to make)346.9 370.21 R .714
+(use of the new bitmap free list.)346.9 381.21 R .715(The rewrite caused)5.715
+F .589(on\255disk format changes which were re\215ected in the)346.9 392.21 R
+(\214le system utilities such as fsck, mkfs, etc.)346.9 403.21 Q 5<8354>338.4
+417.51 S 18.503(he UFS interfaces \()353.01 417.51 R F3(ufs_getpage,)A
+(ufs_putpage)346.9 428.51 Q F2 9.138(\)a)C 6.638(re general enough that no)
+429.808 428.51 R .918(changes were needed for clustering.)346.9 439.51 R
+(Unfortunately)5.918 E(,)-.65 E .044
+(the same is not true of the S5FS interfaces \()346.9 450.51 R F3(bread,)A
+(bwrite)346.9 461.51 Q F2 3.426(\). Peacock)B(added)3.426 E F3(mbread)3.426 E
+F2(and)3.426 E F3(mbwrite)3.426 E F2 1.892
+(to cluster the I/O while we were able to hide the)346.9 472.51 R 9.475
+(clustering beneath the)346.9 483.51 R F3(ufs_getpage)465.585 483.51 Q F2(and)
+543.56 483.51 Q F3(ufs_putpage)346.9 494.51 Q F2(interfaces.)2.5 E 5<834f>338.4
+508.81 S .024(ur write algorithm is dif)354.12 508.81 R .023
+(ferent, it starts a write each)-.18 F .598
+(time a cluster boundary is crossed.)346.9 519.81 R(Peacock')5.599 E 3.099(sw)
+-.55 G(aits)544.11 519.81 Q 2.108(until the buf)346.9 530.81 R 2.108
+(fer cache \214lls up.)-.18 F 2.107(The problem with)7.107 F 2.023
+(waiting is that the system periodically \215ushes the)346.9 541.81 R 2.819
+(cache to avoid \214le system inconsistencies in the)346.9 552.81 R 2.443
+(event of a system crash or power failure.)346.9 563.81 R 2.444(If the)7.444 F
+2.19(machine has a lar)346.9 574.81 R 2.19(ge buf)-.18 F 2.19(fer cache \(lar)
+-.18 F 2.19(ge memory\))-.18 F .997
+(then the \215ush may cause a proportionally lar)346.9 585.81 R .998(ge I/O)
+-.18 F 2.892(burst. If)346.9 596.81 R .392
+(the I/O were \215ushed to disk at each cluster)2.892 F(boundary)346.9 607.81 Q
+2.885(,t)-.65 G .386(he disks are kept uniformly busy)392.185 607.81 R 2.886
+(,i)-.65 G(nstead)532.45 607.81 Q 2.252(developing lar)346.9 618.81 R 2.252
+(ge disk queues.)-.18 F 2.251(Smoothing out the)7.252 F 3.952
+(disk queue will improve perceived performance)346.9 629.81 R
+(since new requests will be serviced quickly)346.9 640.81 Q(.)-.65 E 5<8341>
+338.4 655.11 S 3.3(sd)354.12 655.11 S .8
+(escribed above, the SunOS VM system had no)366.31 655.11 R 1.416
+(I/O heuristics.)346.9 666.11 R 1.416(Peacock was able to use the buf)6.416 F
+(fer)-.18 E .653(cache heuristics where we had to add them in order)346.9
+677.11 R 2.264(to prevent the pageout daemon from hogging the)346.9 688.11 R
+(machine.)346.9 699.11 Q F0(USENIX \255 W)90 744.96 Q
+(inter '91 \255 Dallas, TX)-.18 E F1(9)554 744.96 Q EP
+%%Page: 10 10
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Times-Bold@0 SF(Extent\255like Performance fr)54 32.16 Q(om a)-.18 E/F1
+8/Times-Bold@0 SF(UNIX)2.5 E F0(File System)2.5 E(McV)441.82 32.16 Q
+(oy & Kleiman)-.92 E(Further W)133.385 67.16 Q(ork)-.55 E/F2 10/Times-Roman@0
+SF 3.562(Performance work is never \214nished; there is)75.6 83.66 R 3.757
+(always one more re\214nement.)54 94.66 R 3.757(In this section, we)8.757 F
+1.657(sketch out further work that could be applied to the)54 105.66 R .295
+(\214le system.)54 116.66 R .295(Some of these ideas have to do with clus-)
+5.295 F 2.869(tering but others look at other ways of improving)54 127.66 R
+(other aspects of \214le system performance.)54 138.66 Q/F3 10
+/Times-BoldItalic@0 SF 2.086(Random clustering.)54 152.96 R F2 2.086
+(Clustering is currently enabled)7.086 F 5.226
+(only when sequential access is detected in the)54 163.96 R/F4 10/Courier@0 SF
+(ufs_getpage)54 174.96 Q F2 2.56(routine. Certain)2.56 F .06
+(access patterns, such)2.56 F .879
+(as random reads of 20KB segments of a \214le, will not)54 185.96 R .423
+(receive the full bene\214ts of clustering.)54 196.96 R .424(If the request is)
+5.423 F(a)54 207.96 Q F4(read)3.735 E F2 1.235(of a lar)3.735 F 1.234
+(ge amount of data, it is possible that)-.18 F 5.301
+(the request size could be passed down to the)54 218.96 R F4(ufs_getpage)54
+229.96 Q F2 1.113(routine, which could use the request)3.614 F 1.071
+(size as a hint to turn on clustering for what is appar)54 240.96 R(-)-.2 E
+(ently random access.)54 251.96 Q F3 .62(Bmap cache)54 266.26 R F2 5.62(.T)C
+.62(he translation from logical location to)119.68 266.26 R 2.606
+(physical location is done frequently and gets more)54 277.26 R .327
+(expensive for lar)54 288.26 R .326(ge \214les because of indirect blocks.)-.18
+F(A)5.326 E 2.769(small cache in the inode could reduce the cost of)54 299.26 R
+F4(bmap)54 310.26 Q F2(substantially)2.5 E(.)-.65 E F3(UFS_HOLE)54 324.56 Q F2
+5.4(.S)C .4(ince UFS allows \214les to have holes, it)119.69 324.56 R .335
+(is possible for)54 335.56 R F4(bmap)2.835 E F2 .335(to return a hole.)2.835 F
+.336(If we look back)5.336 F 2.265(at the)54 346.56 R F4(ufs_getpage)4.765 E F2
+2.264(algorithm \(\214gure 2\), we see)4.764 F(that)54 357.56 Q F4(bmap)2.564 E
+F2 .064(is called even when the requested page is in)2.564 F(memory)54 368.56 Q
+13.65(.T)-.65 G 8.65(he reason for this call is that)108.94 368.56 R F4
+(ufs_getpage)54 379.56 Q F2 1.114(needs to know if the requested page)3.614 F
+1.231(has backing store \(i.e., is not a page of zeros from a)54 390.56 R .774
+(hole in a UFS \214le\).)54 401.56 R .775(If the page has no backing store,)
+5.774 F(then)54 412.56 Q F4(ufs_getpage)2.827 E F2 .327
+(must change the page protection)2.827 F .404(bits to be read only)54 423.56 R
+5.404(.A)-.65 G .405(read only page will fault when)149.655 423.56 R .266
+(written, allowing UFS the chance to allocate the block)54 434.56 R .909
+(to back the page.)54 445.56 R .909(If the system did not enforce these)5.909 F
+1.257(rules, a)54 456.56 R F4(write)3.757 E F2 1.257
+(may appear to succeed but later will)3.757 F
+(\214nd that there is no more space in the \214le system.)54 467.56 Q 2.309
+(If UFS did not allow holes in \214les, we could)75.6 481.86 R .74(bypass the)
+54 492.86 R F4(bmap)3.239 E F2 .739(in all the cases that the page was in)3.239
+F(memory)54 503.86 Q 10.043(.O)-.65 G 5.043
+(ne possible solution is to remember)106.443 503.86 R .335
+(whether the \214le has holes and do the)54 514.86 R F4(bmap)2.834 E F2 .334
+(only if the)2.834 F(page is not in memory or if the \214le has holes.)54
+525.86 Q F3 2.177(Data in the inode)54 540.16 R F2 7.178(.M)C 2.178
+(any \214les are small, less than)150.5 540.16 R 3.842(2KB. Caching)54 551.16 R
+1.341(small \214les in the system causes frag-)3.842 F .856
+(mentation since the cache is made up of pages which)54 562.16 R 1.885
+(are typically lar)54 573.16 R 1.885(ger that the average \214le.)-.18 F 3.485
+-.8(We w)6.885 H(ould).8 E 4.136(like the caching ef)54 584.16 R 4.137
+(fect without the fragmentation)-.18 F(ef)54 595.16 Q 3.522(fect. This)-.18 F
+1.021(could be achieved by increasing the size)3.522 F .684
+(of the inode in memory and caching small \214les in the)54 606.16 R .299
+(extra space.)54 617.16 R .299(This is already done for symbolic links if)5.299
+F .853(the link is small enough \(the space normally used for)54 628.16 R 1.591
+(block pointers is \214lled with the symlink data on the)54 639.16 R .791
+(\214rst access\).)54 650.16 R .791(Inodes are already cached in the system)
+5.791 F 2.051(separately from pages which means that the system)54 661.16 R
+2.05(could satisfy many requests directly from the inode)54 672.16 R 1.535
+(instead of the page cache.)54 683.16 R 1.534(This would not work for)6.534 F
+F4(mmap\(\))54 694.16 Q F2(since the data would not be page aligned.)2.5 E F3
+2.045(Extents vs blocks)302.4 67.16 R F2 7.046(.U)C 2.046
+(FS maintains a physical block)393.816 67.16 R 2.527
+(number for each logical block number)302.4 78.16 R 7.527(.G)-.55 G 2.527
+(iven that)484.753 78.16 R .957
+(UFS now allocates mostly contiguous \214les, there is a)302.4 89.16 R 4.195
+(potential for substantial space savings by storing)302.4 100.16 R .001
+(extent tuples of <logical, physical, length> instead of a)302.4 111.16 R .275
+(long list of physical blocks.)302.4 122.16 R(Unfortunately)5.274 E 2.774(,t)
+-.65 G .274(his would)482.556 122.16 R 1.056
+(mean an on\255disk format change which is not accept-)302.4 133.16 R .067
+(able for UFS.)302.4 144.16 R(However)5.067 E 2.567(,i)-.4 G 2.567(ft)405.858
+144.16 S .066(his idea were coupled with)414.535 144.16 R .012
+(the inode cache, lar)302.4 155.16 R .012
+(ge \214les could use the extra space as)-.18 F(a)302.4 166.16 Q F4(bmap)3.206
+E F2 3.206(cache. T)3.206 F 3.206(om)-.7 G .705
+(aximize the bene\214t of the space,)389.614 166.16 R
+(the cache could be a cache of extent tuples.)302.4 177.16 Q F3(B_ORDER)302.4
+191.46 Q F2 6.46(.W)C 3.96(ew)366.12 191.46 S 1.46
+(ould like to improve performance)381.74 191.46 R 1.698
+(of UFS for the average user)302.4 202.46 R 4.198(,n)-.4 G 1.698
+(ot just the users who)432.988 202.46 R 2.107(want high sequential I/O rates.)
+302.4 213.46 R 2.108(One approach is to)7.108 F 3.569
+(discard UFS in favor of a log based \214le system)302.4 224.46 R .053
+([Rosenblum]; this approach has merit.)302.4 235.46 R(However)5.054 E 2.554(,t)
+-.4 G(here)504.79 235.46 Q .34(are improvements that can be made to UFS today)
+302.4 246.46 R 2.84(,a)-.65 G(nd)512 246.46 Q 2.451
+(the installed base of UFS disks makes them worth)302.4 257.46 R(considering.)
+302.4 268.46 Q 2.678(Al)324 282.76 S .178
+(ong standing problem with UFS is that it does)336.678 282.76 R 4.198
+(many operations, such as directory updates, syn-)302.4 293.76 R .777
+(chronously to maintain \214le system consistency on the)302.4 304.76 R 5.975
+(disk. The)302.4 315.76 R 3.476(\214le system uses synchronous writes to)5.975
+F 1.354(insure an absolute ordering when necessary)302.4 326.76 R 6.354(.I)-.65
+G 3.854(ft)494.826 326.76 S(here)504.79 326.76 Q .17
+(was a way to insure the order of critical writes, the \214le)302.4 337.76 R
+2.175(system would be able to do many operations asyn-)302.4 348.76 R
+(chronously)302.4 359.76 Q 6.845(.T)-.65 G 1.845
+(he performance of commands like)361.645 359.76 R F4(rm)4.345 E(*)302.4 370.76
+Q F2(would improve substantially)2.5 E(.)-.65 E 9.139 -.8(We a)324 385.06 T
+7.538(re considering adding a new \215ag,).8 F .472
+(B_ORDER, that would be passed down to the various)302.4 396.06 R 2.938
+(disk drivers.)302.4 407.06 R 2.937(Requests in the disk queue with the)7.938 F
+.065(B_ORDER \215ag may not be reordered by the driver)302.4 418.06 R 2.566(,b)
+-.4 G(y)517 418.06 Q F4(disksort)302.4 429.06 Q F2 2.5(,o)C 2.5(rb)360.4 429.06
+S 2.5(yt)371.23 429.06 S(he controller)381.51 429.06 Q(.)-.55 E F0(Summary)
+391.09 451.61 Q F2 1.872 -.8(We h)324 468.11 T .271
+(ave shown an enhancement that doubles the).8 F 1.251
+(potential I/O rate of any UFS based \214le system.)302.4 479.11 R -.8(We)6.252
+G 1.891(described our implementation and the results of our)302.4 490.11 R
+2.801(implementation. The)302.4 501.11 R .302
+(results show that the disk poten-)2.801 F 1.019
+(tial can be realized and also show that our method is)302.4 512.11 R
+(less costly in CPU cycles than the old method.)302.4 523.11 Q .449
+(Our approach was similar to that taken by extent)324 537.41 R 1.12
+(based \214le systems, but dif)302.4 548.41 R 1.12(fers in important ways: the)
+-.18 F 1.064(extent size is variable, maintained by the \214le system,)302.4
+559.41 R 1.765(and is not exposed to the user)302.4 570.41 R 6.765(.W)-.55 G
+4.265(eb)448.665 570.41 S 1.765(elieve that the)462.37 570.41 R 2.894
+(user is rarely able to choose a correct extent size)302.4 581.41 R 2.547
+(because there rarely exists a `)302.4 592.41 R(`correct')-.74 E 5.047('e)-.74
+G 2.547(xtent size.)478.903 592.41 R .927
+(The optimal extent size varies based on many factors)302.4 603.41 R 2.836
+(that may change during the life of an application.)302.4 614.41 R 1.718
+(Even given that an extent based \214le system may be)302.4 625.41 R .466
+(able to provide guaranteed throughput for the applica-)302.4 636.41 R .329
+(tion that chose the optimal extent size, we believe that)302.4 647.41 R 6.052
+(the enhanced UFS will provide better average)302.4 658.41 R .611
+(throughput, since UFS is trying to allocate extents for)302.4 669.41 R
+(all applications, not just the `)302.4 680.41 Q(`smart')-.74 E 2.5('a)-.74 G
+(pplications.)456.18 680.41 Q F0 304.56(10 USENIX)54 744.96 R 2.5<ad57>2.5 G
+(inter '91 \255 Dallas, TX)429.36 744.96 Q EP
+%%Page: 11 11
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Times-Bold@0 SF(McV)90 32.16 Q(oy & Kleiman)-.92 E
+(Extent\255like Performance fr)344.86 32.16 Q(om a)-.18 E/F1 8/Times-Bold@0 SF
+(UNIX)2.5 E F0(File System)2.5 E(Acknowledgements)158.415 67.16 Q/F2 10
+/Times-Roman@0 SF 3.23(Many people contributed to this project.)111.6 83.66 R
+-.8(We)8.23 G 1.053(would like to thank the following: Anil Shivalingiah,)90
+94.66 R .401(who explained the VM implementation over and over)90 105.66 R(,)
+-.4 E 1.1(Matt Jacob, for SCSI knowledge and the driver clus-)90 116.66 R 1.666
+(tering implementation, Glenn Skinner)90 127.66 R 4.166(,B)-.4 G 1.666
+(ill Shannon,)259.594 127.66 R 2.801
+(John Pope, Mark Smith, and David Rosenthal, for)90 138.66 R 2.224
+(their helpful comments on this paper)90 149.66 R 4.724(,R)-.4 G 2.224
+(ich Clewett)261.546 149.66 R 5.658(and Pat T)90 160.66 R 5.658
+(ownsend, for providing the hardware)-.7 F .147
+(resources without which this project would have never)90 171.66 R .421
+(completed, and the systems group environment at Sun)90 182.66 R
+(Microsystems that made this work possible.)90 193.66 Q F0(Refer)176.57 212.91
+Q(ences)-.18 E F2([Bach])90 229.41 Q .48(M. Bach,)108 240.41 R/F3 10
+/Times-Italic@0 SF .48(The Design of The Unix Operating Sys-)2.98 F(tem, Pr)108
+251.41 Q(entice\255Hall)-.37 E F2 2.5(,1)C(986.)195.48 251.41 Q([Bobrow])90
+265.71 Q .347(D. Bobrow)108 276.71 R 2.847(,J)-.65 G 2.847(.B)161.374 276.71 S
+.347(urch\214el, D. Murphy)173.391 276.71 R 2.848(,a)-.65 G .348(nd R. T)
+263.214 276.71 R(om-)-.7 E 1.377(linson, `)108 287.71 R 1.377
+(`TENEX, a Paged T)-.74 F 1.376(ime Sharing System)-.35 F 1.488
+(for the PDP\25510,')108 298.71 R(')-.74 E F3 1.489(Communications of the ACM,)
+3.988 F F2(15\(3\) March 1972.)108 309.71 Q([Gingell])90 324.01 Q 1.467
+(R. Gingell, J. Moran, and W)108 335.01 R 3.967(.S)-.92 G 1.467(hannon, `)
+240.043 335.01 R(`V)-.74 E(irtual)-.6 E .548(Memory Architecture in SunOS,')108
+346.01 R(')-.74 E F3(Pr)3.048 E .548(oceedings of)-.37 F(the Usenix Confer)108
+357.01 Q(ence,)-.37 E F2(Summer 1987.)2.5 E([Kleiman])90 371.31 Q .489
+(S. Kleiman, `)108 382.31 R .488(`Vnodes: An Architecture for Multi-)-.74 F
+1.261(ple File Systems in Sun UNIX,')108 393.31 R(')-.74 E F3(Pr)3.762 E 1.262
+(oceedings of)-.37 F(the Usenix Confer)108 404.31 Q(ence,)-.37 E F2
+(Summer 1986.)2.5 E([Lef)90 418.61 Q(\215er])-.18 E .615(S. Lef)108 429.61 R
+(\215er)-.18 E 3.115(,M)-.4 G 3.115(.M)160.31 429.61 S .615
+(cKusick, M. Karels, and J. Quar)174.815 429.61 R(-)-.2 E(terman,)108 440.61 Q
+F3 2.538(The Design and Implementation of the)5.038 F 10.96
+(4.3BSD UNIX Operating System, Addi-)108 451.61 R(son\255W)108 462.61 Q(esley)
+-.92 E(,)-.55 E F2(1989.)2.5 E([McKusick])90 476.91 Q 1.663(M. McKusick, W)108
+487.91 R 4.164(.J)-.92 G(oy)190.95 487.91 Q 4.164(,S)-.65 G 4.164(.L)212.524
+487.91 S(ef)225.298 487.91 Q(\215er)-.18 E 4.164(,a)-.4 G 1.664(nd R. Fabry)
+256.922 487.91 R(,)-.65 E -.74(``)108 498.91 S 3.578(AF).74 G 1.077
+(ast File System for UNIX,')130.278 498.91 R(')-.74 E F3 1.077(ACM T)3.577 F
+(ransac-)-.55 E(tions on Computer Systems,)108 509.91 Q F2(2\(3\) August 1984.)
+2.5 E([Moran])90 524.21 Q 1.204(J. Moran, `)108 535.21 R 1.204(`SunOS V)-.74 F
+1.204(irtual Memory Implementa-)-.6 F(tion,')108 546.21 Q(')-.74 E F3(Pr)4.088
+E 1.588(oceedings of the Eur)-.37 F(opean)-.37 E/F4 8/Times-Italic@0 SF(UNIX)
+4.087 E F3 -2.13(User ')4.087 F(s)-1.29 E(Gr)108 557.21 Q(oup,)-.37 E F2
+(April 1988.)2.5 E([Or)90 571.51 Q(ganick])-.18 E 1.025(E. Or)108 582.51 R
+1.025(ganick, `)-.18 F 1.026(`The Multics System \255 An Exami-)-.74 F
+(nation of Its Structure')108 593.51 Q(')-.74 E F3(M.I.T)2.5 E 2.5(.P)-.74 G
+-.37(re)236.5 593.51 S(ss,).37 E F2(1972.)2.5 E([Rosenblum])90 607.81 Q 3.447
+(M. Rosenblum and J. Ousterhout,)108 618.81 R -.74(``)8.446 G 3.446(The LFS).74
+F 3.52(Storage Manager)108 629.81 R(,')-.4 E(')-.74 E F3(Pr)6.02 E 3.52
+(oceedings of the Usenix)-.37 F(Confer)108 640.81 Q(ence,)-.37 E F2
+(Summer 1990.)2.5 E([Patterson])90 655.11 Q 1.685
+(D. Patterson, G. Gibson, and R. Katz, `)108 666.11 R 1.685(`A Case)-.74 F
+5.494(for Redundant Arrays of Inexpensive Disks)108 677.11 R(\(RAID\),')108
+688.11 Q(')-.74 E F3 .918(Report No. UCB/CSD 87/391,)3.418 F F2(Decem-)3.418 E
+(ber 1987.)108 699.11 Q([Peacock])338.4 67.16 Q 2.706(K. Peacock, `)356.4 78.16
+R 2.707(`The CounterPoint Fast File Sys-)-.74 F(tem')356.4 89.16 Q(')-.74 E F3
+(Pr)7.012 E 4.512(oceedings of the Usenix Confer)-.37 F(ence,)-.37 E F2 -.4(Wi)
+356.4 100.16 S(nter 1988.).4 E([Ritchie])338.4 114.46 Q 6.18
+(D. Ritchie and K. Thompson, `)356.4 125.46 R 6.18(`The Unix)-.74 F -.35(Ti)
+356.4 136.46 S 3.455(me\255Sharing System,').35 F(')-.74 E F3 3.455
+(Bell System T)5.955 F(echnical)-.92 E(Journal, 57\(6\),)356.4 147.46 Q F2
+(July\255August 1978.)2.5 E([Thompson])338.4 161.76 Q .732(K. Thompson, `)356.4
+172.76 R .732(`Unix Implementation,')-.74 F(')-.74 E F3 .732(Bell Sys-)3.232 F
+.934(tem T)356.4 183.76 R .934(echnical Journal,)-.92 F F2 .934
+(57\(6\), July\255August 1978.)3.434 F .09(Larry McV)338.4 209.06 R .09
+(oy is currently a Member of T)-1.29 F .09(echnical Staf)-.7 F(f)-.18 E 1.629
+(in the Operating Systems T)338.4 220.06 R 1.628(echnology Department at)-.7 F
+2.604(Sun Microsystems.)338.4 231.06 R 2.604(He received M.S. in 1987 and)7.604
+F .229(B.S. in 1985 in Computer Science from the University)338.4 242.06 R
+1.496(of W)338.4 253.06 R 1.496(isconsin at Madison.)-.4 F 1.496
+(Since then, he has ported)6.496 F 3.092(Unix to a super computer)338.4 264.06
+R 5.591(,b)-.4 G 3.091(rought up TCP/IP on)465.107 264.06 R 2.227
+(machines ranging from 80386 to a super computer)338.4 275.06 R(,)-.4 E .663
+(added POSIX conformance to SunOS, and lectured at)338.4 286.06 R 3.978
+(Stanford University on Operating Systems.)338.4 297.06 R(Since)8.978 E 1.376
+(joining Sun, he has been improving the performance)338.4 308.06 R .517
+(of the VM and \214le subsystems of SunOS.)338.4 319.06 R .517(He may be)5.517
+F 1.509(reached by electronic mail at)338.4 330.06 R F3(lm@Eng.Sun.COM)4.008 E
+F2 4.008(,b)C(y)553 330.06 Q .184
+(phone at \(415\) 336-7627, or by mail at MS 5-44, 2550)338.4 341.06 R
+(Garcia A)338.4 352.06 Q(ve., Mountain V)-.74 E(iew)-.6 E 2.5(,C)-.65 G
+(A, 94043.)464.44 352.06 Q 1.512
+(Steve Kleiman is currently a Distinguished Engineer)338.4 366.36 R 1.443
+(in the Operating Systems T)338.4 377.36 R 1.444(echnology Department of)-.7 F
+.702(Sun Microsystems. He received an M.S.)338.4 388.36 R .701(in Electrical)
+5.701 F 1.494(Engineering from Stanford University in 1978 and a)338.4 399.36 R
+3.225(B.S. in)338.4 410.36 R .725(Electrical Engineering and Computer Science)
+3.225 F 1.687(from M.I.T in 1977. He has been involved with the)338.4 421.36 R
+1.237(design and development)338.4 432.36 R/F5 8/Times-Roman@0 SF(UNIX)3.736 E
+F2 1.236(and workstation archi-)3.736 F .008
+(tecture since 1977; \214rst at Bell T)338.4 443.36 R .009
+(elephone Laboratories)-.7 F .043
+(and then at Sun. He was one of the developers of NFS,)338.4 454.36 R 1.87
+(Vnodes, and the original port of SunOS to SP)338.4 465.36 R(ARC.)-.92 E
+(His electronic mail address is)338.4 476.36 Q F3(srk@Eng.Sun.COM)2.5 E F2(.)A
+F0(USENIX \255 W)90 744.96 Q(inter '91 \255 Dallas, TX)-.18 E F1 -.44(11)550.44
+744.96 S EP
+%%Page: 12 12
+%%BeginPageSetup
+BP
+%%EndPageSetup
+/F0 10/Times-Bold@0 SF 304.56(12 USENIX)54 744.96 R 2.5<ad57>2.5 G
+(inter '91 \255 Dallas, TX)429.36 744.96 Q EP
+%%Trailer
+end
+%%EOF
