@@ -1,0 +1,12 @@
+clone做了什么？
+1.把要clone的树A的root node拷贝一份
+2.这个根结点的所有直系孩子的free-space counters加一，这是一种lazy reference counting
+
+在clone的snapshot中，插入或者修改某个page，做了什么？
+1.如果reference count=1，do nothing
+2.如何ref-count>1，并且重新给page N分配了地址，从L1->L2，此时L1的ref-count-1，L2的ref-count=1，并且N的所有孩子的ref-count都+1
+
+delete时做了什么？
+1.如果ref-count=1，释放这个page，继续遍历
+2.如果ref-count>1，那么ref-count-1，停止遍历
+

@@ -1,0 +1,107 @@
+使用总结：
+	(1)Extent based file storage (2^64 max file size)
+	首先是对extent的理解，其次是extent based的优点是什么，之后是文件的大小限制又是什么？
+	extent：相当于一些连续的block，一个extent由起始的block+长度来定义。
+	优点：可以减少源数据的开销；在ext2里边是使用bitmap来管理block和inode的空闲情况，一个bit管理一个block，因此fs中有多少block就会有多少bit，源数据随着磁盘容量线性增长，而采用extent来管理磁盘空间，一个extent是一段连续的空间，当存储大文件时，就可以减少源数据的开销，用一个extent就可以管理；在btrfs中，给data和metadata分配空闲空间时，都要查询extent树。 参考1
+	优点2:在ext2中，在创建fs的时候，要根据磁盘的block数来分配固定个数的inode和固定长度的bitmap，而用extent管理的话，就不用事先分配固定个数的extent，而是可以根据具体的文件大小来分配extent，做了一个简单的测试，一个60多G的磁盘，用mkfs.btrfs来格式化，df了一下只占用了56个块，并且格式化是瞬间完成的，而用mkfs.ext3格式化，需要分配block, fragment, superblock等等很多东西，格式化完之后发现已经使用了184268个block。
+	文件大小的限制：不太清楚，寻址空间？寻址空间可以用计算来弥补，计算位数？计算位数可以用时间来弥补，多算一会就行了吧
+	文件名的长度限制：255个字节，搜索了一下发现是内核中的规定，libc和userspace都用到了这个规定，算是历史遗留问题？ 参考2
+
+	(2)Space efficient packing of small files
+	实际测试小文件存储的效率，为什么它的小文件存储可以节省空间，btrfs的小文件是怎么存储的？
+
+	测试1：在ext3首先用df记录文件系统的当前大小，然后创建一个小文件，再df，发现两次df相差了4k的大小；
+	测试2:在btrfs中创建很多小文件
+		for fn in {a..z}{a..z}{a..z}; do echo "abc" > $fn; done
+	比较两次df -B1的差值，再除以文件个数，得到的文件大小是1050个字节
+	测试3:一个文件用4个字符，但还是小文件
+		for fn in my{a..z}{a..z}{a..z}; do echo "abcd" > $fn; done
+	得到的平均文件大小是1082
+	测试4：测试3同样的步骤,只不过在ext4的环境下，得到的平均文件大小是4119byte，也验证了测试一的结论
+	btrfs把小文件直接存储在extent中，这样就避免了一个小文件也要分配一个块
+	测试5:小文件到多少的时候就不是小文件了，howsmall.sh
+
+(3)Space efficient indexed directories
+	实际测试所占用的空间，indexed directories的概念，具体的实现方法，ext系列的是怎么做的？
+	猜想：目录的索引项在比较少的时候也是存在extent里边，只有当大于一定的数量的索引时，才分配空间
+	测试：新建一个目录，然后在这个目录中传建文件，当创建了8个之后，再创建时会发现分配了4个4K的block，跟小文件的时候类似，但是之后的df会减少，不知道为什么，或许这种测试本来就不正确？
+	实现：如何根据文件名查找，首先是把文件名做一个hash，然后通过这个hash值在目录项的btree中查找，找到key之后，在映射到具体的item
+	ext2:是根据文件名在目录项中顺序查找
+
+	(4)Dynamic inode allocation
+	优点有哪些？有没有什么缺点？
+	优点就是，节点永远不会用完，但是相对ext的固定节点来说，可能是从设计本身决定的
+	缺点还不知道。。。
+	只有少量的节点被传建，当不够用时，可以平滑的传建更多的节点。
+
+	(5)Writable snapshots
+	实际测试，工作原理是什么？
+	测试1:在根目录传建1000个1M文件，然后打一个快照：
+		dd if=/dev/urandom of=name count=2048
+		for fn in {1..1000}; do cat name >> $fn; done
+		btrfsctl -s snapshot .
+	之后，再打一个快照：
+		btrfsctl -s snapshot1 .
+		ls snapshot1/snapshot
+	会发现快照下边的内容不会再被打快照了，只是把它当成一个空的目录来看待
+	测试2:当修改快照中的文件内容时，会发生cow，整个fs的used会变多
+	测试3:创建一个小文件，然后打一个快照，向快照中的这个文件追加几个字符，发现used增加了16K，莫非snapshot的时候extent tree没有复制，还是修改snapshot本身的机制就是这样？读源代码的时候才能看出来吧
+	测试4:如果给快照打快照的话，打快照的对象应该就是要被打快照的快照本身
+		btrfsctl -s snapshotofsnapshot snapshot
+	clone做了什么？
+	1.把要clone的树A的root node拷贝一份
+	2.这个根结点的所有直系孩子的free-space counters加一，这是一种lazy reference counting
+
+	(6)Subvolumes (separate internal filesystem roots)
+	实际测试，优点是什么，为什么引入这个特性？
+	传建一个subvolume:
+		btrfsctl -S name 
+	可以把一个subvolume挂载到另外一个目录：
+		mount -o loop,subvol=snapshot /dev/sda8 /mnt
+
+	(7)Object level mirroring and striping
+	意义？
+	不太懂。。。跟多设备管理相关？
+	mirror的概念是把一个磁盘的数据备份到另一块磁盘上
+	stripe是把数据分散写到多个磁盘上
+	object不知道是什么概念？
+
+	(8)Checksums on data and metadata (multiple algorithms available)
+	可以做性能测试，工作原理是什么
+	ext2/3没有checksum，对磁盘完全信任，但是往往会有silent corruption的错误
+	btrfs在读取数据的时候会首先读取相应的checksum，写入数据之前，首先计算checksum值，然后将checksum和数据同时写入磁盘。
+	btrfs将数据和checksum分开，可以避免那种整个block都错误的情况（把checksum和数据放一块），btrfs采用单独的checksum tree来管理。 参考1
+
+	(9)Compression
+	功能测试+性能测试，工作原理
+	测试1:把硬盘重新挂载：
+		mount -o compress /dev/sda8 btrfs
+	然后传建一个很大的全1文件，df的差值发现100M的文件只用了4M的文件存储
+	测试2:同样的测试在ext3中文件并没有压缩
+	btrfs现在是采用zlib压缩
+
+	(10)Integrated multiple device support, with several raid algorithms
+	功能测试，工作原理
+	raid0，无差错控制的stripe，可以提高数据传输速率
+	raid1,镜像结构，安全性高，磁盘利用率低
+	raid10,一个带区结构和一个镜像结构
+	测试：
+		losetup /dev/loop6 disk1.img
+		losetup /dev/loop7 disk2.img
+		btrfs-vol -a /dev/loop7 disk
+		btrfs-vol -b disk	
+
+	(11)Online filesystem check
+	功能测试
+	ext为什么没有在线的fsck呢？
+
+	(12)Very fast offline filesystem check
+	功能测试，横向比较
+	测试：
+		btrfsck /dev/sda8
+
+
+参考：
+1.http://www.ibm.com/developerworks/cn/linux/l-cn-btrfs/
+2.http://www.spinics.net/linux/lists/linux-ext4/msg10172.html
+3.http://bk.baidu.com/view/7102.htm
