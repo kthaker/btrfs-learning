@@ -1,0 +1,24 @@
+Won't a compressed filesystem mean that everything has to be uncompressed when used, which will slow down the performance and consume a lot of power?
+
+	Actually, quite the opposite. Having compressed files makes disk access quicker. For reading and writing. As for power consumption, I don't believe there is, or that it would be measureable.
+
+Just a quick example. If you have a 20K text file, then the hard disk needs to read 20K of data on ext3 filesystems. On a compressed btrfs, the same file might actually only consume 4K of real disk space. This instantly saves 80% of read time.
+Of course the CPU has to decompress those 4K into the original 20K then. But the decompression algorithm takes little time in comparison to disk reads.
+
+I believe btrfs uses zlib compression and the deflate algorithm. While this is no real time compression method like lzo, it's still extremely fast. Decompression is hardly noticeable. Writing might be slowed down, but again is negligible compared to disk writes.
+
+Same goes for power consuption, I suppose. While there are additional CPU cycles for compression/decompression, there was probably more power used for hard disk reading/writing.
+
+Of course not all files can be compressed. Btrfs leaves jpeg, png and for example video files alone, but binaries and text files make up a good portion of any Linux system. On my setup, there are ca. 3.3GB in files but only 2.2GB on-disk. It's not quite a 33% saving, but the boot process definitely feels that much faster!
+
+form:http://forums.geteasypeasy.com/viewtopic.php?f=12&t=2617
+
+
+一个文件系统中指定某一些子卷压缩，某些不压缩的解决办法：
+1.btrfs的压缩功能是在挂载的时候指定的，具体的办法就是 -o compress
+2.如果子卷是在同一个分区上，用
+	mount -o compress,subvol=subvolume /dev/sdax subvolume
+如果压缩选项没有被打开，重新挂载并不会打开压缩选项
+3.所以如果某些子卷要想启用subvolume的功能，那么这些子卷应该是独立的分区，在挂载时指定压缩选项
+4.可以看出btrfs对每个文件应该有压缩标签，会知道那个文件压缩了，那个文件没有被压缩，从原则上来说，应该可以指定同一分区上某些subvolumes启用压缩的，但是用户态还没有实现
+
