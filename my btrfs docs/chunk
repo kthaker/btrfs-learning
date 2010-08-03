@@ -1,0 +1,5 @@
+Chunks are sections of storage with a logical address. All extent pointers reference chunks instead of physical blocks on a drive. 
+记录一些疑问：在分布式存储中，主节点进行压缩的话，需要排队，可能会需要大量的cpu，因此把压缩的任务丢给下边的子节点，虽然会消耗网络带宽资源，但是可以节省存储资源
+
+1.如何把元数据和数据分开到不同的物理设备上存储，比如把元数据存储在ssd上，这样就可以大大加快fsck的速度?
+通过在邮件在询问，发现btrfs中还没有办法来控制数据和元数据的存储；使用btrfs现在提供的命令仅仅可以做到控制metadata只存储到某个设备，但是data也会往这个设备上写，所以并不能满足我们把metadata和data分开的需求；并且把metadata和data分开的意义是什么呢？1.fsck更快 2.能够更快的检索。 但是有几个疑问，首先并不是所有的metadata都是会经常被访问的，其次那些可能会被经常访问到的数据还是放在hdd中，不能加快访问速度；所以感觉新的关于hot data的patch是值得研究的
